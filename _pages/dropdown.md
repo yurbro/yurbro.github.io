@@ -1,13 +1,8 @@
 ---
 layout: page
-title: submenus
-nav: true
-nav_order: 8
-dropdown: true
-children:
-  - title: bookshelf
-    permalink: /books/
-  - title: divider
-  - title: blog
-    permalink: /blog/
+title: archive
+permalink: /archive/
+nav: false
 ---
+
+This hidden compatibility page is retained for the upstream theme documentation and is not included in the site navigation.
