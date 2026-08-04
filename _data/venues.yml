@@ -1,9 +1,27 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"CHERD":
+  url: https://www.sciencedirect.com/journal/chemical-engineering-research-and-design
+  color: "#003f5c"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"AID":
+  url: https://advanced.onlinelibrary.wiley.com/journal/30075055
+  color: "#6a4c93"
 
-"Vision":
-  color: "#009f36"
+"RSC Pharm.":
+  url: https://pubs.rsc.org/en/journals/journalissues/pm
+  color: "#00856a"
+
+"CACE":
+  url: https://www.sciencedirect.com/journal/computers-and-chemical-engineering
+  color: "#d65a31"
+
+"JFI":
+  color: "#2f6690"
+
+"CJCE":
+  color: "#4f772d"
+
+"IVC":
+  color: "#9b5de5"
+
+"CIE":
+  color: "#6c757d"

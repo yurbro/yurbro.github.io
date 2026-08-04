@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: publications by categories in reversed chronological order.
+description: Peer-reviewed work in AI-enabled formulation design, experimental decision-making and industrial process intelligence.
 nav: true
 nav_order: 2
 ---

@@ -1,200 +1,283 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Yu Zhang",
+    "label": "PhD Researcher in Chemical and Process Engineering",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "yu.zhang@surrey.ac.uk",
+    "url": "https://yurbro.github.io",
+    "summary": "PhD researcher developing AI-enabled, uncertainty-aware and increasingly autonomous methods for dermal formulation design, experimental decision-making and scientific data engineering.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Guildford",
+      "countryCode": "GB",
+      "region": "Surrey"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Google Scholar",
+        "username": "Yu Zhang",
+        "url": "https://scholar.google.com/citations?user=W6Jdq00AAAAJ&hl=en"
+      },
+      {
+        "network": "ORCID",
+        "username": "0000-0002-8389-6716",
+        "url": "https://orcid.org/0000-0002-8389-6716"
+      },
+      {
+        "network": "GitHub",
+        "username": "yurbro",
+        "url": "https://github.com/yurbro"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "University of Surrey",
+      "position": "PhD Researcher",
+      "url": "https://www.surrey.ac.uk/people/yu-zhang",
+      "location": "Guildford, UK",
+      "startDate": "2023-09",
+      "endDate": "",
+      "summary": "AI-enabled formulation design and experimental decision-making for dermal drug delivery.",
+      "highlights": [
+        "Develop probabilistic surrogate models, active-learning strategies and early-stopping algorithms for IVRT and IVPT experiments.",
+        "Build interpretable dynamic models using domain-knowledge-constrained symbolic regression.",
+        "Develop reproducible scientific LLM workflows for evidence extraction and dataset construction."
+      ]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "University of Surrey",
+      "position": "Teaching Assistant",
+      "url": "https://www.surrey.ac.uk/school-chemistry-chemical-engineering",
+      "location": "Guildford, UK",
+      "startDate": "2024-09",
+      "endDate": "",
+      "summary": "Teaching support across engineering systems, science principles and advanced pharmaceutical formulations.",
+      "highlights": [
+        "ENG2128 Engineering Systems and Management",
+        "ENG1080 Science Principles for Engineers",
+        "CHEM042 Advanced Pharmaceutical Formulations"
+      ]
+    },
+    {
+      "name": "National Key R&D Programme of China project",
+      "position": "Lead Researcher - Fault Diagnosis and Intelligent Early Warning",
+      "location": "Beijing, China",
+      "startDate": "2020-10",
+      "endDate": "2021-10",
+      "summary": "Data-driven fault diagnosis for underwater production systems.",
+      "highlights": ["Led development of intelligent early-warning algorithms in Python.", "Identified pump failures from operational process data."]
+    },
+    {
+      "name": "Industrial data analytics projects",
+      "position": "Technical Lead",
+      "location": "China",
+      "startDate": "2020-12",
+      "endDate": "2022-07",
+      "summary": "Applied process-data analytics to reservoir simulation and energy-market intelligence.",
+      "highlights": [
+        "Characterised dominant flow fields from numerical reservoir simulations using clustering and data-driven analysis.",
+        "Built web-scraping and visual analytics components for a shale-gas trading market intelligence system."
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "University of Surrey",
+      "location": "Guildford, UK",
+      "url": "https://www.surrey.ac.uk/school-chemistry-chemical-engineering",
+      "area": "Chemical and Process Engineering",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "startDate": "2023-09",
+      "endDate": "2027-09",
+      "courses": ["Digital twin and AI methods for topical formulation design", "Supervisors: Professor Tao Chen and Dr Dimitrios Tsaoulidis"]
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "institution": "China University of Petroleum - Beijing",
+      "location": "Beijing, China",
+      "url": "https://www.cup.edu.cn/english/",
+      "area": "Control Science and Engineering, College of Artificial Intelligence",
+      "studyType": "MEng",
+      "startDate": "2020-09",
+      "endDate": "2023-07",
+      "courses": []
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "institution": "Panzhihua University",
+      "location": "Sichuan, China",
+      "url": "https://www.pzhu.edu.cn/",
+      "area": "Automation, School of Intelligent Manufacturing",
+      "studyType": "BEng",
+      "startDate": "2015-09",
+      "endDate": "2019-07",
+      "courses": []
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Active learning-based adaptive optimisation for developing dermal drug formulations",
+      "publisher": "Chemical Engineering Research and Design, 232",
+      "releaseDate": "2026",
+      "url": "https://doi.org/10.1016/j.cherd.2026.07.035",
+      "summary": "Adaptive batch allocation between expected-improvement and information-seeking formulation candidates."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Autonomous AI-Driven Design for Skin Product Formulations",
+      "publisher": "Advanced Intelligent Discovery, e70100",
+      "releaseDate": "2026",
+      "url": "https://doi.org/10.1002/aidi.202500239",
+      "summary": "A roadmap for assay-aware, closed-loop and increasingly autonomous skin formulation development."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Confidence-Bound Early Stopping of Experiments with Sequential Calibration",
+      "publisher": "Chemical Engineering Research and Design, 230, 756-766",
+      "releaseDate": "2026",
+      "url": "https://doi.org/10.1016/j.cherd.2026.05.013",
+      "summary": "Early stopping with calibrated control of the false-stop rate."
+    },
+    {
+      "name": "A modelling-based comparison of IVRT and synthetic-membrane permeation for early formulation screening",
+      "publisher": "RSC Pharmaceutics",
+      "releaseDate": "2026",
+      "url": "https://doi.org/10.1039/D6PM00035E",
+      "summary": "Quantifies alignment between IVRT and synthetic-membrane permeation assays."
+    },
+    {
+      "name": "An early decision-making algorithm for accelerating topical drug formulation optimisation",
+      "publisher": "Computers & Chemical Engineering, 201, 109224",
+      "releaseDate": "2025",
+      "url": "https://doi.org/10.1016/j.compchemeng.2025.109224",
+      "summary": "Probabilistic early decisions from partial IVPT trajectories."
+    },
+    {
+      "name": "Data augmentation using improved conditional GAN under extremely limited fault samples and its application in fault diagnosis of electric submersible pump",
+      "publisher": "Journal of the Franklin Institute, 361(4), 106629",
+      "releaseDate": "2024",
+      "url": "https://doi.org/10.1016/j.jfranklin.2024.01.030",
+      "summary": "Virtual sample generation for fault diagnosis under extreme data scarcity."
+    },
+    {
+      "name": "Improved dynamic kernel PCA based on local preserving projections and its application for electric submersible pump fault diagnosis",
+      "publisher": "The Canadian Journal of Chemical Engineering, 101(8), 4539-4554",
+      "releaseDate": "2023",
+      "url": "https://doi.org/10.1002/cjce.24779",
+      "summary": "Local-structure-preserving nonlinear dynamic process monitoring."
+    },
+    {
+      "name": "Improving metric-based few-shot learning with dynamically scaled softmax loss",
+      "publisher": "Image and Vision Computing, 140, 104860",
+      "releaseDate": "2023",
+      "url": "https://doi.org/10.1016/j.imavis.2023.104860",
+      "summary": "A dynamically scaled loss for metric-based few-shot image classification."
+    },
+    {
+      "name": "Green scheduling optimization of shuttle tanker route considering carbon emissions",
+      "publisher": "Chemical Industry and Engineering, 39(2), 23-31",
+      "releaseDate": "2022",
+      "url": "https://doi.org/10.13353/j.issn.1004.9533.20210396",
+      "summary": "Multi-objective route scheduling with carbon-emission considerations."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Adaptive Batch Optimisation",
+      "summary": "Active learning for formulation optimisation under a limited per-batch experimental budget.",
+      "highlights": ["Gaussian process regression", "Expected improvement", "Hypervolume contribution"],
+      "startDate": "2024",
+      "endDate": "2026",
+      "url": "https://github.com/yurbro/Yu-Zhang-PhD/tree/main/AL_AO"
+    },
+    {
+      "name": "Early Decision-Making Algorithm",
+      "summary": "Forecasting final permeation outcomes from partial IVPT trajectories.",
+      "highlights": ["Uncertainty quantification", "Probability of exceedance", "Experimental resource saving"],
+      "startDate": "2023",
+      "endDate": "2025",
+      "url": "https://github.com/yurbro/Yu-Zhang-PhD/tree/main/EDMA"
+    },
+    {
+      "name": "Domain-Constrained Symbolic Regression",
+      "summary": "Interpretable dynamic modelling and optimisation of dermal drug release.",
+      "highlights": ["Domain constraints", "Dynamic modelling", "Interpretable optimisation"],
+      "startDate": "2025",
+      "endDate": "",
+      "url": "https://github.com/yurbro/Yu-Zhang-PhD/tree/main/DKC-SR"
+    },
+    {
+      "name": "SkinMiner",
+      "summary": "LLM-powered extraction and verification of dermal formulation evidence.",
+      "highlights": ["Scientific LLMs", "Evidence provenance", "Structured datasets"],
+      "startDate": "2026",
+      "endDate": "",
+      "url": "https://github.com/yurbro/skinminer"
+    }
+  ],
+  "awards": [
+    {
+      "title": "China Scholarship Council - University of Surrey Award",
+      "date": "2023-09",
+      "awarder": "China Scholarship Council and University of Surrey",
+      "summary": "Doctoral scholarship, Grant No. 202306440060."
+    },
+    {
+      "title": "UK Turing Scheme Research Placement",
+      "date": "2025-01",
+      "awarder": "UK Turing Scheme",
+      "summary": "Research placement at West China Hospital, Sichuan University."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "AI and Modelling",
+      "level": "Research",
+      "icon": "fa-solid fa-brain",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Gaussian processes",
+        "Active learning",
+        "Bayesian optimisation",
+        "Symbolic regression",
+        "Uncertainty quantification",
+        "Large language models"
       ]
+    },
+    {
+      "name": "Formulation and Experiments",
+      "level": "Research",
+      "icon": "fa-solid fa-flask-vial",
+      "keywords": ["Dermal drug delivery", "IVRT", "IVPT", "Formulation design", "Digital twins", "Automated experimentation"]
+    },
+    {
+      "name": "Computing",
+      "level": "Advanced",
+      "icon": "fa-solid fa-code",
+      "keywords": ["Python", "pandas", "scikit-learn", "SciPy", "Matplotlib", "Git", "Reproducible research"]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Chinese",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "Professional working proficiency",
       "icon": ""
     }
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Research interests",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "AI for science",
+        "Autonomous laboratories",
+        "Skin product formulation",
+        "Scientific data engineering",
+        "Process systems engineering"
       ]
     }
   ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
-    }
-  ]
+  "volunteer": [],
+  "certificates": [],
+  "references": []
 }
