@@ -9,120 +9,114 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "nav-publications",
+  },{id: "nav-publications",
           title: "publications",
-          description: "publications by categories in reversed chronological order.",
+          description: "Peer-reviewed work in AI-enabled formulation design, experimental decision-making and industrial process intelligence.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Research systems spanning experimental decision-making, interpretable modelling and scientific data engineering.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "Open research code, reproducibility materials and active projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "Research experience, education, selected outputs and technical expertise.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
         },{id: "nav-teaching",
           title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          description: "Teaching support in engineering systems, scientific principles and pharmaceutical formulation.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
-          },
-        },{id: "dropdown-bookshelf",
-              title: "bookshelf",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/books/";
-              },
-            },{id: "dropdown-blog",
-              title: "blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/blog/";
-              },
-            },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-      
-        title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-        
-      },
-    },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-      
-        title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-        
-      },
-    },{id: "books-the-godfather",
+        },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-started-a-uk-turing-scheme-research-placement-at-west-china-hospital-sichuan-university-extending-my-work-on-ai-enabled-healthcare-research",
+          title: 'Started a UK Turing Scheme research placement at West China Hospital, Sichuan University,...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-our-early-decision-making-algorithm-for-accelerating-topical-formulation-experiments-is-now-available-in-computers-amp-amp-chemical-engineering-paper-code",
+          title: 'Our early decision-making algorithm for accelerating topical formulation experiments is now available in...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-our-active-learning-framework-for-adaptive-dermal-formulation-optimisation-was-accepted-by-chemical-engineering-research-and-design-paper-code",
+          title: 'Our active learning framework for adaptive dermal formulation optimisation was accepted by Chemical...',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "projects-adaptive-batch-optimisation",
+          title: 'Adaptive Batch Optimisation',
+          description: "Active learning for dermal formulations using GPR, expected improvement and hypervolume contribution to adaptively balance performance and information gain.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/01-adaptive-optimisation/";
+            },},{id: "projects-early-decision-making-for-ivpt",
+          title: 'Early Decision-Making for IVPT',
+          description: "Probabilistic forecasting from partial permeation trajectories to stop unpromising experiments early while accounting for uncertainty.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/02-early-decision-making/";
+            },},{id: "projects-domain-constrained-symbolic-regression",
+          title: 'Domain-Constrained Symbolic Regression',
+          description: "Interpretable dynamic models of dermal drug release that embed domain constraints, support optimisation and expose scientifically meaningful relationships.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/03-domain-constrained-sr/";
+            },},{id: "projects-skinminer",
+          title: 'SkinMiner',
+          description: "An LLM-powered data-mining framework for traceable extraction, verification and structuring of dermal formulation evidence from the scientific literature.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/04-skinminer/";
+            },},{id: "projects-phd-research-hub",
+          title: 'PhD Research Hub',
+          description: "The umbrella repository connecting publications, code, datasets and reproducibility materials across my doctoral research programme.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/05-phd-research-hub/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%79%75.%7A%68%61%6E%67@%73%75%72%72%65%79.%61%63.%75%6B", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://github.com/yurbro", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/yurbro", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0002-8389-6716", "_blank");
+        },
+      },{
+        id: 'social-researchgate',
+        title: 'ResearchGate',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.researchgate.net/profile/Yu-Zhang-1039/", "_blank");
         },
       },{
         id: 'social-rss',
@@ -136,14 +130,14 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://scholar.google.com/citations?user=W6Jdq00AAAAJ", "_blank");
         },
       },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
+        id: 'social-work',
+        title: 'Work',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://www.surrey.ac.uk/people/yu-zhang", "_blank");
         },
       },{
       id: 'light-theme',
