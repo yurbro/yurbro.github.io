@@ -1,9 +1,19 @@
-github_users:
-  - yurbro
+github_username: yurbro
+github_profile_url: https://github.com/yurbro
 
-repo_description_lines_max: 2
-
-github_repos:
-  - yurbro/Yu-Zhang-PhD
-  - yurbro/skinminer
-  - yurbro/yurbro.github.io
+featured_repositories:
+  - name: Yu-Zhang-PhD
+    url: https://github.com/yurbro/Yu-Zhang-PhD
+    icon: fa-solid fa-flask
+    label: PhD research hub
+    description: Reproducible code and research materials for AI-enabled dermal formulation design, active learning, early decision-making and interpretable modelling.
+  - name: SkinMiner
+    url: https://github.com/yurbro/skinminer
+    icon: fa-solid fa-microscope
+    label: LLM research system
+    description: An LLM-powered framework for extracting, structuring and verifying evidence from dermal drug-formulation literature.
+  - name: yurbro.github.io
+    url: https://github.com/yurbro/yurbro.github.io
+    icon: fa-solid fa-globe
+    label: Academic website
+    description: Source code for this academic portfolio, including publications, projects, research updates and professional profiles.
