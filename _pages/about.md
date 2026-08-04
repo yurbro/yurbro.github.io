@@ -31,8 +31,8 @@ I develop **AI-enabled methods for faster, more reliable skin product formulatio
 The long-term goal is an **assay-aware digital twin** that can learn from limited experimental data, quantify uncertainty, select informative formulations, stop unpromising experiments early and turn data into interpretable scientific knowledge.
 
 <div class="hero-actions">
-  <a class="btn btn-primary" href="{{ '/projects/' | relative_url }}">Explore my research</a>
-  <a class="btn btn-outline-primary" href="{{ '/publications/' | relative_url }}">View publications</a>
+  <a class="btn btn-primary" href="https://yurbro.github.io/projects/">Explore my research</a>
+  <a class="btn btn-outline-primary" href="https://yurbro.github.io/publications/">View publications</a>
   <a class="btn btn-outline-primary" href="https://github.com/yurbro/Yu-Zhang-PhD">PhD code</a>
 </div>
 
