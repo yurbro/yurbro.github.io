@@ -2,7 +2,7 @@
 layout: page
 title: Visitor overview
 permalink: /visitors/
-description: Aggregate pageviews and the worldwide reach of Yu Zhang's academic website.
+description: Aggregate visits and the worldwide reach of Yu Zhang's academic website.
 nav: false
 ---
 
@@ -25,12 +25,12 @@ nav: false
     <div class="visitor-metric">
       <span class="visitor-metric-icon" aria-hidden="true"><i class="fa-solid fa-chart-simple"></i></span>
       <strong data-visitor-total>—</strong>
-      <span>Total pageviews</span>
+      <span>Total visits</span>
     </div>
     <div class="visitor-metric">
       <span class="visitor-metric-icon" aria-hidden="true"><i class="fa-regular fa-calendar"></i></span>
       <strong data-visitor-today>—</strong>
-      <span>Pageviews today (UTC)</span>
+      <span>Visits today (UTC)</span>
     </div>
     <a class="visitor-metric visitor-metric-link" href="https://mapmyvisitors.com/web/1c7nt">
       <span class="visitor-metric-icon" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
@@ -68,7 +68,7 @@ nav: false
 
   <p class="visitor-privacy-note">
     <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-    This page mirrors aggregate pageview totals only. The map is rendered by MapMyVisitors; no IP addresses or individual browsing histories
+    This page mirrors aggregate visit totals only. The map is rendered by MapMyVisitors; no IP addresses or individual browsing histories
     are published here.
   </p>
 </div>

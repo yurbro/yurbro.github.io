@@ -20,15 +20,15 @@
       return response.json();
     })
     .then((data) => {
-      const totalPageviews = Number(data.total_pageviews);
-      const todayPageviews = Number(data.today_pageviews);
+      const totalVisits = Number(data.total_visits);
+      const todayVisits = Number(data.today_visits);
 
-      if (!Number.isFinite(totalPageviews) || !Number.isFinite(todayPageviews)) {
+      if (!Number.isFinite(totalVisits) || !Number.isFinite(todayVisits)) {
         throw new TypeError("Visitor statistics response did not contain numeric totals.");
       }
 
-      total.textContent = numberFormatter.format(totalPageviews);
-      today.textContent = numberFormatter.format(todayPageviews);
+      total.textContent = numberFormatter.format(totalVisits);
+      today.textContent = numberFormatter.format(todayVisits);
       overview.classList.add("visitor-stats-ready");
     })
     .catch(showUnavailable);

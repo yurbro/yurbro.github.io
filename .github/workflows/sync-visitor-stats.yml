@@ -19,19 +19,40 @@ jobs:
       - name: Fetch aggregate statistics
         env:
           MAPMYVISITORS_ENDPOINT: https://mapmyvisitors.com/ajax/orange_dots?id=2249417&last_hit_id=0&max_hit_id=0&max_visit_count=1
+          MAPMYVISITORS_MAP_ENDPOINT: https://mapmyvisitors.com/ajax/map?last_hit_id=0&initial_hit_id=0&initial=true&animate=false&user=0&url=%22https%3A%2F%2Fyurbro.github.io%2F%22&id=2249417&globalTotal=false&mapType=widget&callback=stats
         run: |
           set -euo pipefail
           curl --fail --silent --show-error --retry 3 --max-time 30 \
+            "$MAPMYVISITORS_MAP_ENDPOINT" -o /tmp/mapmyvisitors-map.jsonp
+          curl --fail --silent --show-error --retry 3 --max-time 30 \
             "$MAPMYVISITORS_ENDPOINT" -o /tmp/mapmyvisitors.json
 
-          today="$(jq -r '.today_hits | tonumber' /tmp/mapmyvisitors.json)"
-          total="$(jq -r '.total_hits | tonumber' /tmp/mapmyvisitors.json)"
+          total="$(jq -r '.visits_count | tonumber' /tmp/mapmyvisitors.json)"
+          export TODAY_DATE="$(date -u +'%Y-%m-%d')"
+          today="$(python3 - <<'PY'
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          raw = Path("/tmp/mapmyvisitors-map.jsonp").read_text().strip()
+          if not raw.startswith("stats(") or not raw.endswith(")"):
+              raise ValueError("Unexpected MapMyVisitors JSONP response")
+
+          script = json.loads(raw[6:-1])
+          visits = re.findall(
+              r'_map\.addRealtimeVisitors\([^,]+,\s*"[^"]*",\s*"[^"]*",\s*"(\d{4}-\d{2}-\d{2}) [^"]*",\s*"(\d+)"',
+              script,
+          )
+          print(sum(int(count) for date, count in visits if date == os.environ["TODAY_DATE"]))
+          PY
+          )"
 
           jq -n \
             --argjson today "$today" \
             --argjson total "$total" \
             --arg updated_at "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" \
-            '{today_pageviews: $today, total_pageviews: $total, updated_at: $updated_at, aggregation_timezone: "UTC", source: "MapMyVisitors"}' \
+            '{today_visits: $today, total_visits: $total, updated_at: $updated_at, aggregation_timezone: "UTC", source: "MapMyVisitors"}' \
             > /tmp/visitor-stats.json
 
       - name: Check out statistics branch
@@ -46,9 +67,9 @@ jobs:
           set -euo pipefail
 
           if jq -e \
-            --argjson today "$(jq '.today_pageviews' /tmp/visitor-stats.json)" \
-            --argjson total "$(jq '.total_pageviews' /tmp/visitor-stats.json)" \
-            '.today_pageviews == $today and .total_pageviews == $total' \
+            --argjson today "$(jq '.today_visits' /tmp/visitor-stats.json)" \
+            --argjson total "$(jq '.total_visits' /tmp/visitor-stats.json)" \
+            '.today_visits == $today and .total_visits == $total' \
             visitor-data/visitor-stats.json > /dev/null; then
             echo "Visitor totals have not changed."
             exit 0
