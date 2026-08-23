@@ -1,0 +1,63 @@
+name: Sync visitor statistics
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: visitor-statistics
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch aggregate statistics
+        env:
+          MAPMYVISITORS_ENDPOINT: https://mapmyvisitors.com/ajax/orange_dots?id=2249417&last_hit_id=0&max_hit_id=0&max_visit_count=1
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --retry 3 --max-time 30 \
+            "$MAPMYVISITORS_ENDPOINT" -o /tmp/mapmyvisitors.json
+
+          today="$(jq -r '.today_hits | tonumber' /tmp/mapmyvisitors.json)"
+          total="$(jq -r '.total_hits | tonumber' /tmp/mapmyvisitors.json)"
+
+          jq -n \
+            --argjson today "$today" \
+            --argjson total "$total" \
+            --arg updated_at "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" \
+            '{today_pageviews: $today, total_pageviews: $total, updated_at: $updated_at, aggregation_timezone: "UTC", source: "MapMyVisitors"}' \
+            > /tmp/visitor-stats.json
+
+      - name: Check out statistics branch
+        uses: actions/checkout@v4
+        with:
+          ref: visitor-stats
+          path: visitor-data
+          fetch-depth: 1
+
+      - name: Publish aggregate statistics
+        run: |
+          set -euo pipefail
+
+          if jq -e \
+            --argjson today "$(jq '.today_pageviews' /tmp/visitor-stats.json)" \
+            --argjson total "$(jq '.total_pageviews' /tmp/visitor-stats.json)" \
+            '.today_pageviews == $today and .total_pageviews == $total' \
+            visitor-data/visitor-stats.json > /dev/null; then
+            echo "Visitor totals have not changed."
+            exit 0
+          fi
+
+          cp /tmp/visitor-stats.json visitor-data/visitor-stats.json
+          cd visitor-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add visitor-stats.json
+          git commit -m "Update aggregate visitor statistics"
+          git push origin HEAD:visitor-stats

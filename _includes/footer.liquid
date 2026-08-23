@@ -9,6 +9,8 @@
   {% if site.last_updated %}
     Last updated: {{ 'now' | date: '%B %d, %Y' }}.
   {% endif %}
+  <span class="footer-separator" aria-hidden="true">·</span>
+  <a class="footer-visitor-link" href="{{ '/visitors/' | relative_url }}"><i class="fa-solid fa-earth-europe" aria-hidden="true"></i> Visitors</a>
 {% endcapture %}
 
 {% if site.footer_fixed %}
