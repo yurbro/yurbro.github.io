@@ -43,6 +43,8 @@ The long-term goal is an **assay-aware digital twin** that can learn from limite
   <div class="stat-card"><strong>Open</strong><span>code and reproducibility</span></div>
 </div>
 
+{% include academic_metrics.liquid %}
+
 ## Research programme
 
 <div class="focus-grid">
