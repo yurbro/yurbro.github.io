@@ -142,108 +142,6 @@ body {
   }
 }
 
-/* DOI-level academic impact metrics */
-.academic-metrics {
-  background: linear-gradient(135deg, var(--global-card-bg-color), var(--yu-teal-soft));
-  border: 1px solid var(--yu-card-border);
-  border-radius: 1rem;
-  margin: 2rem 0 2.6rem;
-  padding: 1.25rem;
-}
-
-.academic-metrics-heading {
-  align-items: flex-start;
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-
-  h2 {
-    font-size: 1.25rem;
-    margin: 0.2rem 0 0;
-  }
-}
-
-.academic-metrics-kicker {
-  color: var(--yu-teal);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-}
-
-.academic-metrics-source {
-  background: var(--global-card-bg-color);
-  border: 1px solid var(--yu-card-border);
-  border-radius: 999px;
-  color: var(--global-text-color-light);
-  flex: 0 0 auto;
-  font-size: 0.7rem;
-  padding: 0.35rem 0.65rem;
-  text-decoration: none;
-
-  i {
-    color: var(--yu-teal);
-    margin-right: 0.25rem;
-  }
-
-  &:hover {
-    border-color: var(--yu-teal);
-    color: var(--yu-teal);
-    text-decoration: none;
-  }
-}
-
-.academic-metrics-grid {
-  display: grid;
-  gap: 0.7rem;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.academic-metric-card {
-  background: var(--global-card-bg-color);
-  border: 1px solid var(--yu-card-border);
-  border-radius: 0.8rem;
-  min-width: 0;
-  padding: 0.9rem;
-
-  strong,
-  > span:last-child {
-    display: block;
-  }
-
-  strong {
-    color: var(--yu-teal);
-    font-size: 1.35rem;
-    line-height: 1.15;
-    margin-top: 0.45rem;
-  }
-
-  > span:last-child {
-    color: var(--global-text-color-light);
-    font-size: 0.72rem;
-    margin-top: 0.3rem;
-  }
-}
-
-.academic-metric-icon {
-  color: var(--yu-teal);
-  font-size: 0.8rem;
-}
-
-.academic-metrics-note {
-  color: var(--global-text-color-light);
-  font-size: 0.72rem;
-  line-height: 1.55;
-  margin: 0.9rem 0 0;
-}
-
-.academic-metrics-unavailable .academic-metrics-note::before {
-  color: var(--yu-amber);
-  content: "Metrics are temporarily unavailable. ";
-  font-weight: 600;
-}
-
 .focus-grid {
   display: grid;
   gap: 1rem;
@@ -401,21 +299,6 @@ body {
       display: inline-block;
       margin-bottom: 0.75rem;
     }
-  }
-
-  .academic-metrics-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 575px) {
-  .academic-metrics-heading {
-    display: block;
-  }
-
-  .academic-metrics-source {
-    display: inline-block;
-    margin-top: 0.75rem;
   }
 }
 
