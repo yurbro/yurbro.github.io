@@ -9,8 +9,6 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-{% include academic_metrics.liquid %}
-
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
