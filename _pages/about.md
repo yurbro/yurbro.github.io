@@ -37,7 +37,7 @@ The long-term goal is an **assay-aware digital twin** that can learn from limite
 </div>
 
 <div class="research-stats" aria-label="Research at a glance">
-  <div class="stat-card"><strong>10</strong><span>peer-reviewed papers</span></div>
+  <div class="stat-card"><strong>{% bibliography_count %}</strong><span>peer-reviewed papers</span></div>
   <div class="stat-card"><strong>4</strong><span>PhD-led journal outputs</span></div>
   <div class="stat-card"><strong>2023-27</strong><span>doctoral programme</span></div>
   <div class="stat-card"><strong>Open</strong><span>code and reproducibility</span></div>
