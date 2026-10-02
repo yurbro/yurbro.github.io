@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Research systems spanning experimental decision-making, interpretable modelling and scientific data engineering.",
+          description: "Research in formulation design, clinical machine learning, interpretable modelling and scientific data engineering.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -61,6 +61,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-domain-knowledge-constrained-symbolic-regression-framework-for-interpretable-dermal-formulation-optimisation-is-now-published-in-pharmaceutical-research-paper",
           title: 'Our domain knowledge constrained symbolic regression framework for interpretable dermal formulation optimisation is...',
           description: "",
+          section: "News",},{id: "news-presented-llm-powered-multimodal-agentic-data-mining-for-dermal-formulation-science-at-the-28th-international-congress-of-chemical-and-process-engineering-chisa-2026-in-prague-czech-republic-skinminer",
+          title: 'Presented “LLM-powered multimodal agentic data mining for dermal formulation science” at the 28th...',
+          description: "",
           section: "News",},{id: "projects-adaptive-batch-optimisation",
           title: 'Adaptive Batch Optimisation',
           description: "Active learning for dermal formulations using GPR, expected improvement and hypervolume contribution to adaptively balance performance and information gain.",
@@ -86,6 +89,11 @@ ninja.data = [{
           description: "The umbrella repository connecting publications, code, datasets and reproducibility materials across my doctoral research programme.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/05-phd-research-hub/";
+            },},{id: "projects-clinical-machine-learning",
+          title: 'Clinical Machine Learning',
+          description: "Reproducible workflows for assisted-reproduction data, including outcome definition, feature construction and patient-aware, time-aware validation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/clinical-machine-learning/";
             },},{
         id: 'social-email',
         title: 'email',
