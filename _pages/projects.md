@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Research systems spanning experimental decision-making, interpretable modelling and scientific data engineering.
+description: Research in formulation design, clinical machine learning, interpretable modelling and scientific data engineering.
 nav: true
 nav_order: 3
 display_categories: [research]
@@ -10,7 +10,7 @@ horizontal: true
 ---
 
 <div class="project-intro">
-These projects form a connected research programme: experimental evidence feeds probabilistic and interpretable models; those models guide the next formulation or experimental decision; literature-mining systems extend the evidence base. Code and reproducibility materials are available where data-sharing constraints allow.
+My projects connect data-efficient modelling with practical decisions in formulation science and healthcare. They span adaptive experimental design, early prediction, interpretable models, scientific evidence extraction and clinical outcome modelling. Code and reproducibility materials are available where data-sharing constraints allow.
 </div>
 <!-- pages/projects.md -->
 <div class="projects">

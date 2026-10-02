@@ -9,10 +9,10 @@ last_name: Zhang
 contact_note: >
   I welcome collaborations at the intersection of AI, chemical engineering and dermal drug delivery.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Yu Zhang is a PhD researcher at the University of Surrey developing AI-enabled, uncertainty-aware and increasingly autonomous methods for skin product formulation design.
+  Yu Zhang is a PhD researcher and research assistant at the University of Surrey working on AI, digital twins and data-driven modelling for drug delivery, engineering and real-world clinical data.
 footer_text: >
   © 2026 Yu Zhang. Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
-keywords: AI for Science, Chemical Engineering, Dermal Drug Delivery, Formulation Optimisation, Digital Twins, Active Learning, Large Language Models
+keywords: AI for Science, Chemical Engineering, Dermal Drug Delivery, Formulation Optimisation, Digital Twins, Active Learning, Large Language Models, Clinical Machine Learning, Uncertainty Quantification
 lang: en
 icon: 🧪
 
@@ -620,10 +620,12 @@ jsonresume:
   - work
   - education
   - publications
+  - presentations
   - projects
   - volunteer
   - awards
   - certificates
+  - memberships
   - skills
   - languages
   - interests
