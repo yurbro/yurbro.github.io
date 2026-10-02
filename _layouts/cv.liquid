@@ -107,12 +107,16 @@ layout: default
                   {% include resume/skills.liquid %}
                 {% when 'publications' %}
                   {% include resume/publications.liquid %}
+                {% when 'presentations' %}
+                  {% include resume/presentations.liquid %}
                 {% when 'languages' %}
                   {% include resume/languages.liquid %}
                 {% when 'interests' %}
                   {% include resume/interests.liquid %}
                 {% when 'certificates' %}
                   {% include resume/certificates.liquid %}
+                {% when 'memberships' %}
+                  {% include resume/memberships.liquid %}
                 {% when 'references' %}
                   {% include resume/references.liquid %}
                 {% else %}

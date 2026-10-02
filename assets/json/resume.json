@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Yu Zhang",
-    "label": "PhD Researcher in Chemical and Process Engineering",
+    "label": "PhD Researcher and Research Assistant",
     "image": "",
     "email": "yu.zhang@surrey.ac.uk",
     "url": "https://yurbro.github.io",
-    "summary": "PhD researcher developing AI-enabled, uncertainty-aware and increasingly autonomous methods for dermal formulation design, experimental decision-making and scientific data engineering.",
+    "summary": "PhD researcher in Chemical and Process Engineering at the University of Surrey, working at the interface of AI, digital twins and data-driven engineering. Research spans data-efficient formulation and drug-delivery design, uncertainty-aware modelling, scientific evidence extraction and reproducible machine learning with real-world clinical data.",
     "location": {
       "city": "Guildford",
       "countryCode": "GB",
@@ -32,16 +32,31 @@
   "work": [
     {
       "name": "University of Surrey",
-      "position": "PhD Researcher",
+      "position": "Research Assistant — Clinical Machine Learning",
+      "url": "https://www.surrey.ac.uk/people/yu-zhang",
+      "location": "Guildford, UK",
+      "startDate": "2026-06",
+      "endDate": "",
+      "summary": "Work with Dr Xilu Wang on reproducible machine-learning workflows for real-world clinical data in assisted reproduction and IVF.",
+      "highlights": [
+        "Define clinically meaningful outcomes and construct analysis-ready features from heterogeneous, longitudinal treatment records.",
+        "Address incomplete records and outcome availability when preparing data for patient-level outcome modelling.",
+        "Design patient-aware and time-aware validation to reduce information leakage and assess model generalisation.",
+        "Maintain auditable workflows with attention to confidentiality, data provenance and reproducibility."
+      ]
+    },
+    {
+      "name": "University of Surrey",
+      "position": "PhD Researcher — Machine Learning and Digital-Twin Modelling",
       "url": "https://www.surrey.ac.uk/people/yu-zhang",
       "location": "Guildford, UK",
       "startDate": "2023-09",
       "endDate": "",
-      "summary": "AI-enabled formulation design and experimental decision-making for dermal drug delivery.",
+      "summary": "Data-efficient modelling and experimental decision-making for pharmaceutical formulation and drug delivery.",
       "highlights": [
-        "Develop probabilistic surrogate models, active-learning strategies and early-stopping algorithms for IVRT and IVPT experiments.",
-        "Build interpretable dynamic models using domain-knowledge-constrained symbolic regression.",
-        "Develop reproducible scientific LLM workflows for evidence extraction and dataset construction."
+        "Develop Gaussian-process surrogate models, Bayesian optimisation and active-learning workflows for adaptive and multi-objective experimental design.",
+        "Model drug-release and permeation behaviour using domain-knowledge-constrained symbolic regression and temporal prediction from partial experimental trajectories.",
+        "Develop reproducible LLM-enabled workflows for scientific evidence extraction and dataset construction."
       ]
     },
     {
@@ -49,7 +64,7 @@
       "position": "Teaching Assistant",
       "url": "https://www.surrey.ac.uk/school-chemistry-chemical-engineering",
       "location": "Guildford, UK",
-      "startDate": "2024-09",
+      "startDate": "2024",
       "endDate": "",
       "summary": "Teaching support across engineering systems, science principles and advanced pharmaceutical formulations.",
       "highlights": [
@@ -60,23 +75,39 @@
     },
     {
       "name": "National Key R&D Programme of China project",
-      "position": "Lead Researcher - Fault Diagnosis and Intelligent Early Warning",
+      "position": "Research Assistant — Intelligent Monitoring of Electric Submersible Pump Systems",
       "location": "Beijing, China",
-      "startDate": "2020-10",
+      "startDate": "2020-12",
       "endDate": "2021-10",
-      "summary": "Data-driven fault diagnosis for underwater production systems.",
-      "highlights": ["Led development of intelligent early-warning algorithms in Python.", "Identified pump failures from operational process data."]
+      "summary": "Data-driven condition monitoring, fault classification and early warning from multivariate operational and process data.",
+      "highlights": [
+        "Applied PCA/SFA, regression, clustering and SVM methods to operational sensor and process data.",
+        "Implemented Python-based analytical software for condition monitoring and fault diagnosis."
+      ]
     },
     {
-      "name": "Industrial data analytics projects",
-      "position": "Technical Lead",
-      "location": "China",
+      "name": "China University of Petroleum - Beijing",
+      "position": "Research Assistant — Data-Driven Reservoir Simulation Analysis",
+      "url": "https://www.cup.edu.cn/english/",
+      "location": "Beijing, China",
       "startDate": "2020-12",
       "endDate": "2022-07",
-      "summary": "Applied process-data analytics to reservoir simulation and energy-market intelligence.",
+      "summary": "Data-driven analysis of numerical reservoir-simulation outputs.",
       "highlights": [
-        "Characterised dominant flow fields from numerical reservoir simulations using clustering and data-driven analysis.",
-        "Built web-scraping and visual analytics components for a shale-gas trading market intelligence system."
+        "Used PCA/MPCA, Hotelling's T², SPE and self-organising maps to extract spatial and temporal features.",
+        "Classified dominant flow regimes from simulation outputs."
+      ]
+    },
+    {
+      "name": "External client project",
+      "position": "Technical Lead — Big Data AI Analysis System for Shale Gas Trading Market",
+      "location": "China",
+      "startDate": "2021-05",
+      "endDate": "2021-06",
+      "summary": "Python software for energy-market data collection, analysis and visualisation.",
+      "highlights": [
+        "Built automated collection and analysis of real-time and historical market data.",
+        "Delivered executable software to an external client."
       ]
     }
   ],
@@ -88,8 +119,12 @@
       "area": "Chemical and Process Engineering",
       "studyType": "PhD",
       "startDate": "2023-09",
-      "endDate": "2027-09",
-      "courses": ["Digital twin and AI methods for topical formulation design", "Supervisors: Professor Tao Chen and Dr Dimitrios Tsaoulidis"]
+      "endDate": "",
+      "courses": [
+        "Expected thesis submission: late 2026 / early 2027.",
+        "Digital twin and AI methods for topical formulation design",
+        "Supervisors: Professor Tao Chen and Dr Dimitrios Tsaoulidis"
+      ]
     },
     {
       "institution": "China University of Petroleum - Beijing",
@@ -99,7 +134,7 @@
       "studyType": "MEng",
       "startDate": "2020-09",
       "endDate": "2023-07",
-      "courses": []
+      "courses": ["System identification", "Optimal estimation", "Nonlinear systems", "Chemical process dynamics"]
     },
     {
       "institution": "Panzhihua University",
@@ -113,6 +148,13 @@
     }
   ],
   "publications": [
+    {
+      "name": "Domain Knowledge Constrained Symbolic Regression for Optimising Dermal Drug Formulations",
+      "publisher": "Pharmaceutical Research",
+      "releaseDate": "2026",
+      "url": "https://doi.org/10.1007/s11095-026-04170-9",
+      "summary": "Domain-knowledge-constrained symbolic regression for interpretable modelling and optimisation of dermal drug formulations."
+    },
     {
       "name": "Active learning-based adaptive optimisation for developing dermal drug formulations",
       "publisher": "Chemical Engineering Research and Design, 232",
@@ -170,6 +212,16 @@
       "summary": "Multi-objective route scheduling with carbon-emission considerations."
     }
   ],
+  "presentations": [
+    {
+      "name": "LLM-powered multimodal agentic data mining for dermal formulation science",
+      "authors": "Zhang, Y.; Tsaoulidis, D.; Chen, T.",
+      "date": "2026-08-24",
+      "event": "28th International Congress of Chemical and Process Engineering (CHISA 2026)",
+      "location": "Prague, Czech Republic",
+      "summary": "Oral presentation."
+    }
+  ],
   "projects": [
     {
       "name": "Adaptive Batch Optimisation",
@@ -202,34 +254,67 @@
       "startDate": "2026",
       "endDate": "",
       "url": "https://github.com/yurbro/skinminer"
+    },
+    {
+      "name": "Clinical Machine Learning for Assisted Reproduction",
+      "summary": "Ongoing research on reproducible outcome-modelling workflows for real-world IVF data.",
+      "highlights": ["Outcome definition and feature construction", "Patient-aware and time-aware validation", "Data provenance and reproducibility"],
+      "startDate": "2026-06",
+      "endDate": "",
+      "url": "https://yurbro.github.io/projects/clinical-machine-learning/"
     }
   ],
   "awards": [
     {
-      "title": "China Scholarship Council - University of Surrey Award",
-      "date": "2023-09",
-      "awarder": "China Scholarship Council and University of Surrey",
-      "summary": "Doctoral scholarship, Grant No. 202306440060."
+      "title": "Short-Term Scientific Mission and Mobility Funding",
+      "date": "2026-06",
+      "awarder": "COST STSM, UK Turing Scheme and FEPS",
+      "summary": "€2.8K COST STSM, £1K UK Turing Scheme and £1K FEPS funding for a June-August 2026 research placement at Jagiellonian University, Poland, hosted by Professor Barbara Wiśniowska and Dr Laura Krumpholz."
     },
     {
       "title": "UK Turing Scheme Research Placement",
       "date": "2025-01",
       "awarder": "UK Turing Scheme",
-      "summary": "Research placement at West China Hospital, Sichuan University."
+      "summary": "£1K mobility funding for a January-March 2025 research placement at West China Hospital, Sichuan University."
+    },
+    {
+      "title": "China Scholarship Council - University of Surrey Award",
+      "date": "2023-09",
+      "awarder": "China Scholarship Council and University of Surrey",
+      "summary": "Full-time PhD scholarship, September 2023-September 2027. Grant No. 202306440060."
     }
   ],
   "skills": [
     {
-      "name": "AI and Modelling",
+      "name": "Machine Learning and Modelling",
       "level": "Research",
       "icon": "fa-solid fa-brain",
       "keywords": [
         "Gaussian processes",
-        "Active learning",
-        "Bayesian optimisation",
-        "Symbolic regression",
-        "Uncertainty quantification",
-        "Large language models"
+        "Random forests",
+        "SVR / SVM",
+        "Neural networks",
+        "PCA / MPCA",
+        "Slow feature analysis",
+        "Self-organising maps"
+      ]
+    },
+    {
+      "name": "Optimisation and Decision-Making",
+      "level": "Research",
+      "icon": "fa-solid fa-route",
+      "keywords": ["Bayesian optimisation", "Active learning", "Uncertainty quantification", "Temporal prediction", "NSGA-II", "Symbolic regression"]
+    },
+    {
+      "name": "Clinical Data and Validation",
+      "level": "Research",
+      "icon": "fa-solid fa-chart-line",
+      "keywords": [
+        "Data-quality auditing",
+        "Outcome definition",
+        "Feature construction",
+        "Longitudinal data",
+        "Patient-aware and time-aware validation"
       ]
     },
     {
@@ -239,10 +324,27 @@
       "keywords": ["Dermal drug delivery", "IVRT", "IVPT", "Formulation design", "Digital twins", "Automated experimentation"]
     },
     {
-      "name": "Computing",
-      "level": "Advanced",
+      "name": "LLMs and Scientific Evidence",
+      "level": "Research",
+      "icon": "fa-solid fa-book",
+      "keywords": ["Multimodal and agentic data mining", "Evidence extraction", "Scientific workflow automation", "Evidence provenance"]
+    },
+    {
+      "name": "Scientific Computing",
+      "level": "Research",
       "icon": "fa-solid fa-code",
-      "keywords": ["Python", "pandas", "scikit-learn", "SciPy", "Matplotlib", "Git", "Reproducible research"]
+      "keywords": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "MATLAB",
+        "pandas",
+        "scikit-learn",
+        "SciPy",
+        "Matplotlib",
+        "Git / GitHub",
+        "Reproducible research"
+      ]
     }
   ],
   "languages": [
@@ -262,15 +364,37 @@
       "name": "Research interests",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "AI for science",
-        "Autonomous laboratories",
-        "Skin product formulation",
-        "Scientific data engineering",
-        "Process systems engineering"
+        "AI for engineering and science",
+        "Digital twins",
+        "Formulation and drug delivery",
+        "Clinical machine learning",
+        "Scientific data mining",
+        "Process monitoring and fault diagnosis"
       ]
     }
   ],
   "volunteer": [],
-  "certificates": [],
+  "certificates": [
+    {
+      "name": "Microsoft Certified: Azure AI Fundamentals",
+      "issuer": "Microsoft",
+      "date": "2021",
+      "icon": "fa-solid fa-certificate"
+    }
+  ],
+  "memberships": [
+    {
+      "name": "Institution of Chemical Engineers (IChemE)",
+      "role": "Affiliate member"
+    },
+    {
+      "name": "Chinese Association of Automation (CAC)",
+      "role": "Member"
+    },
+    {
+      "name": "Chemical Industry and Engineering Society of China (CIESC)",
+      "role": "Member"
+    }
+  ],
   "references": []
 }

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Researcher in Chemical and Process Engineering · University of Surrey
+subtitle: PhD Researcher and Research Assistant · University of Surrey
 
 profile:
   align: right
@@ -24,26 +24,26 @@ latest_posts:
   enabled: false
 ---
 
-<div class="hero-kicker">AI for science · Formulation engineering · Dermal drug delivery</div>
+<div class="hero-kicker">AI for engineering and science · Digital twins · Clinical machine learning</div>
 
-I develop **AI-enabled methods for faster, more reliable skin product formulation design**. My PhD research combines probabilistic machine learning, active learning, optimisation, interpretable modelling and automated experimentation with in vitro release and permeation testing.
+I develop **data-efficient machine learning and digital-twin methods for engineering and healthcare**. My work combines probabilistic modelling, Bayesian optimisation, active learning, uncertainty quantification and interpretable models to support decisions when experiments or observations are limited.
 
-The long-term goal is an **assay-aware digital twin** that can learn from limited experimental data, quantify uncertainty, select informative formulations, stop unpromising experiments early and turn data into interpretable scientific knowledge.
+At Surrey, my PhD focuses on **AI-enabled formulation design and drug delivery**. Alongside my doctoral research, I work with Dr Xilu Wang as a Research Assistant on **real-world clinical data in assisted reproduction (IVF)**, developing reproducible workflows for outcome modelling and patient-aware, time-aware validation.
 
 <div class="hero-actions">
   <a class="btn btn-primary" href="https://yurbro.github.io/projects/">Explore my research</a>
   <a class="btn btn-outline-primary" href="https://yurbro.github.io/publications/">View publications</a>
-  <a class="btn btn-outline-primary" href="https://github.com/yurbro/Yu-Zhang-PhD">PhD code</a>
+  <a class="btn btn-outline-primary" href="https://yurbro.github.io/cv/">Academic CV</a>
 </div>
 
 <div class="research-stats" aria-label="Research at a glance">
   <div class="stat-card"><strong>{% bibliography_count %}</strong><span>peer-reviewed papers</span></div>
-  <div class="stat-card"><strong>4</strong><span>PhD-led journal outputs</span></div>
-  <div class="stat-card"><strong>2023-27</strong><span>doctoral programme</span></div>
+  <div class="stat-card"><strong>4</strong><span>first-author PhD papers</span></div>
+  <div class="stat-card"><strong>2026/27</strong><span>expected thesis submission</span></div>
   <div class="stat-card"><strong>Open</strong><span>code and reproducibility</span></div>
 </div>
 
-## Research programme
+## Formulation research programme
 
 <div class="focus-grid">
   <div class="focus-card">
@@ -70,6 +70,7 @@ The long-term goal is an **assay-aware digital twin** that can learn from limite
 
 ## Current research directions
 
+- **Clinical machine learning** - defining outcomes, constructing reliable features and developing patient-aware, time-aware validation for assisted-reproduction data. [Research overview](/projects/clinical-machine-learning/).
 - **Adaptive formulation optimisation** - allocating small experimental batches between performance-seeking and information-seeking candidates.
 - **Early experimental decision-making** - forecasting final outcomes from partial IVPT/IVRT trajectories and controlling false stops.
 - **Interpretable dynamic modelling** - embedding physical and mathematical constraints into symbolic regression for drug-release kinetics.
@@ -85,10 +86,12 @@ The long-term goal is an **assay-aware digital twin** that can learn from limite
 
 ## Background
 
-I am a PhD researcher in **Chemical and Process Engineering at the University of Surrey**, supervised by [Professor Tao Chen](https://www.surrey.ac.uk/people/tao-chen) and [Dr Dimitrios Tsaoulidis](https://www.surrey.ac.uk/people/dimitrios-tsaoulidis). Before joining Surrey, I completed an MEng in Control Science and Engineering at China University of Petroleum - Beijing and a BEng in Automation at Panzhihua University.
+I am pursuing a PhD in **Chemical and Process Engineering at the University of Surrey**, supervised by [Professor Tao Chen](https://www.surrey.ac.uk/people/tao-chen) and [Dr Dimitrios Tsaoulidis](https://www.surrey.ac.uk/people/dimitrios-tsaoulidis). **Expected thesis submission: late 2026 / early 2027.**
 
-My earlier work addressed industrial process monitoring, few-shot learning, fault diagnosis and operational optimisation. That background now informs my approach to data-scarce formulation science: models should be useful under real experimental constraints, not only accurate on a tidy benchmark.
+My research experience includes placements at **Jagiellonian University, Poland** (June-August 2026), supported by COST STSM, the UK Turing Scheme and FEPS, and at **West China Hospital, Sichuan University** (January-March 2025).
+
+Before Surrey, I completed an MEng in Control Science and Engineering at China University of Petroleum - Beijing and a BEng in Automation at Panzhihua University. My earlier work spans industrial process monitoring, fault diagnosis, data-driven analysis of reservoir-simulation outputs and energy-market software. This background informs my focus on reproducible models that remain useful under real experimental and data constraints.
 
 <div class="tag-cloud" aria-label="Methods and domains">
-  <span>Gaussian processes</span><span>Active learning</span><span>Bayesian optimisation</span><span>Symbolic regression</span><span>Uncertainty quantification</span><span>LLMs</span><span>Digital twins</span><span>IVRT / IVPT</span><span>Python</span>
+  <span>Gaussian processes</span><span>Active learning</span><span>Bayesian optimisation</span><span>Symbolic regression</span><span>Uncertainty quantification</span><span>Temporal prediction</span><span>LLMs</span><span>Digital twins</span><span>Clinical data</span><span>IVRT / IVPT</span><span>Python</span>
 </div>
