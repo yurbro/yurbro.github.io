@@ -18,3 +18,13 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+
+## Preprints & manuscripts under review
+
+Preprints are listed separately and are not included in the homepage's peer-reviewed paper count.
+
+<div class="publications">
+
+{% bibliography --file preprints --group_by none %}
+
+</div>

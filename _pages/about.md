@@ -80,7 +80,9 @@ At Surrey, my PhD focuses on **AI-enabled formulation design and drug delivery**
   <span class="callout-label">Current build</span>
   <div>
     <strong>SkinMiner</strong> is an LLM-powered framework for mining dermal formulation evidence with provenance, verification and structured outputs.
-    <a href="https://github.com/yurbro/skinminer">Visit the project →</a>
+    The manuscript is under review at <em>International Journal of Pharmaceutics</em> and is available as an SSRN preprint.
+    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7620063">Read the preprint →</a>
+    <a href="https://github.com/yurbro/skinminer">Code →</a>
   </div>
 </div>
 
