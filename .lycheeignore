@@ -1,2 +1,5 @@
 linkedin.com
 reddit.com
+
+# SSRN blocks automated checks (403); public URL supplied in the author's SSRN posting email.
+^https://papers\.ssrn\.com/sol3/papers\.cfm\?abstract_id=7620063$

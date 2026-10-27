@@ -149,6 +149,20 @@
   ],
   "publications": [
     {
+      "name": "SkinMiner: LLM-powered data mining to accelerate formulation design for skin products",
+      "publisher": "SSRN preprint (under review at International Journal of Pharmaceutics)",
+      "releaseDate": "2026",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7620063",
+      "summary": "Yu Zhang, Xilu Wang, Dimitrios Tsaoulidis and Tao Chen. LLM-powered extraction, verification and structuring of dermal formulation evidence. Preprint; peer review ongoing."
+    },
+    {
+      "name": "Optimisation of Topical and Transdermal Pharmaceutical Formulations: Methods, Challenges and Opportunities",
+      "publisher": "SmartSys (accepted)",
+      "releaseDate": "2026",
+      "url": "https://yurbro.github.io/publications/#xiao2026topical",
+      "summary": "Yongrui Xiao, Yu Zhang, Chunlin Chen, Dimitrios Tsaoulidis, Kai Yang and Tao Chen. Review article accepted on 8 October 2026; publication details forthcoming."
+    },
+    {
       "name": "Domain Knowledge Constrained Symbolic Regression for Optimising Dermal Drug Formulations",
       "publisher": "Pharmaceutical Research",
       "releaseDate": "2026",
@@ -249,7 +263,7 @@
     },
     {
       "name": "SkinMiner",
-      "summary": "LLM-powered extraction and verification of dermal formulation evidence.",
+      "summary": "LLM-powered extraction and verification of dermal formulation evidence. SSRN preprint available; under review at International Journal of Pharmaceutics.",
       "highlights": ["Scientific LLMs", "Evidence provenance", "Structured datasets"],
       "startDate": "2026",
       "endDate": "",
