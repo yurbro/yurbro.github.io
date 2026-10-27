@@ -64,6 +64,12 @@ ninja.data = [{
           section: "News",},{id: "news-presented-llm-powered-multimodal-agentic-data-mining-for-dermal-formulation-science-at-the-28th-international-congress-of-chemical-and-process-engineering-chisa-2026-in-prague-czech-republic-skinminer",
           title: 'Presented “LLM-powered multimodal agentic data mining for dermal formulation science” at the 28th...',
           description: "",
+          section: "News",},{id: "news-our-co-authored-review-optimisation-of-topical-and-transdermal-pharmaceutical-formulations-methods-challenges-and-opportunities-has-been-accepted-by-smartsys-publication-details-are-forthcoming",
+          title: 'Our co-authored review, “Optimisation of Topical and Transdermal Pharmaceutical Formulations: Methods, Challenges and...',
+          description: "",
+          section: "News",},{id: "news-skinminer-llm-powered-data-mining-to-accelerate-formulation-design-for-skin-products-is-available-as-an-ssrn-preprint-the-manuscript-is-under-review-at-international-journal-of-pharmaceutics-code",
+          title: 'SkinMiner: LLM-powered data mining to accelerate formulation design for skin products is available...',
+          description: "",
           section: "News",},{id: "projects-adaptive-batch-optimisation",
           title: 'Adaptive Batch Optimisation',
           description: "Active learning for dermal formulations using GPR, expected improvement and hypervolume contribution to adaptively balance performance and information gain.",
@@ -81,9 +87,9 @@ ninja.data = [{
               window.location.href = "/projects/03-domain-constrained-sr/";
             },},{id: "projects-skinminer",
           title: 'SkinMiner',
-          description: "An LLM-powered data-mining framework for traceable extraction, verification and structuring of dermal formulation evidence from the scientific literature.",
+          description: "LLM-powered mining of dermal formulation evidence. SSRN preprint available; under review at International Journal of Pharmaceutics.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/04-skinminer/";
+              window.location.href = "/projects/skinminer/";
             },},{id: "projects-phd-research-hub",
           title: 'PhD Research Hub',
           description: "The umbrella repository connecting publications, code, datasets and reproducibility materials across my doctoral research programme.",
