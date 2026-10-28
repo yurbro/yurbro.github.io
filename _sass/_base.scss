@@ -770,12 +770,16 @@ footer.sticky-bottom {
           }
         }
 
-        > em {
+        em {
           border-bottom: 1px solid;
           font-style: normal;
         }
 
-        > span.more-authors {
+        > button.more-authors {
+          background: transparent;
+          border: 0;
+          padding: 0;
+          font: inherit;
           color: var(--global-text-color-light);
           border-bottom: 1px dashed var(--global-text-color-light);
           cursor: pointer;
@@ -783,6 +787,11 @@ footer.sticky-bottom {
           &:hover {
             color: var(--global-text-color);
             border-bottom: 1px dashed var(--global-text-color);
+          }
+
+          &:focus-visible {
+            outline: 2px solid var(--global-theme-color);
+            outline-offset: 2px;
           }
         }
       }

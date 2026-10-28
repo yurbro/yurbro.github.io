@@ -1,3 +1,33 @@
+# Google Scholar profiles supplied by Yu Zhang on 28 October 2026.
+# Match full given names to avoid linking unrelated namesakes.
+"gao":
+  - firstname: ["Xiaoyong"]
+    url: https://scholar.google.com/citations?user=o-kIM4QAAAAJ&hl=en
+
+"tsaoulidis":
+  - firstname: ["Dimitrios"]
+    url: https://scholar.google.com/citations?user=koeftG4AAAAJ&hl=en
+
+"chen":
+  - firstname: ["Tao"]
+    url: https://scholar.google.com/citations?user=nJjX5nIAAAAJ&hl=en
+
+"xiao":
+  - firstname: ["Yongrui"]
+    url: https://scholar.google.com/citations?user=i1UuxzwAAAAJ&hl=en
+
+"wang":
+  - firstname: ["Xilu"]
+    url: https://scholar.google.com/citations?user=Xmlr1xQAAAAJ&hl=en
+
+"yang":
+  - firstname: ["Kai"]
+    url: https://scholar.google.com/citations?user=OwzLb_MAAAAJ&hl=en
+
+"zhu":
+  - firstname: ["Mengjia"]
+    url: https://scholar.google.com/citations?user=9fz9eboAAAAJ&hl=en
+
 "adams":
   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
