@@ -1,0 +1,25 @@
+{%- assign bib_author = include.author -%}
+{%- assign bib_author_is_self = false -%}
+{%- assign bib_author_last_name = bib_author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+{%- assign bib_author_last_html = bib_author.last | escape | regex_replace: '([*∗†‡§¶‖^]+)', '<sup>\1</sup>' -%}
+{%- if site.scholar.last_name contains bib_author_last_name -%}
+  {%- if site.scholar.first_name contains bib_author.first -%}
+    {%- assign bib_author_is_self = true -%}
+  {%- endif -%}
+{%- endif -%}
+{%- assign bib_coauthor_url = null -%}
+{%- assign bib_author_lookup = bib_author_last_name | downcase | remove_accents -%}
+{%- for coauthor in site.data.coauthors[bib_author_lookup] -%}
+  {%- if coauthor.firstname contains bib_author.first -%}
+    {%- assign bib_coauthor_url = coauthor.url -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- capture bib_author_name -%}{{ bib_author.first | escape }} {{ bib_author_last_html }}{%- endcapture -%}
+{%- if bib_author_is_self -%}
+  <em>{{ bib_author_name }}</em>
+{%- elsif bib_coauthor_url -%}
+  <a href="{{ bib_coauthor_url | escape }}" target="_blank" rel="noopener noreferrer">{{ bib_author_name }}</a>
+{%- else -%}
+  {{- bib_author_name -}}
+{%- endif -%}
