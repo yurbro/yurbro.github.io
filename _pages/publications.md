@@ -21,7 +21,7 @@ nav_order: 2
 
 ## Preprints & manuscripts under review
 
-Preprints are listed separately and are not included in the homepage's peer-reviewed paper count.
+Preprints and manuscripts under review are listed separately and are not included in the homepage's peer-reviewed paper count.
 
 <div class="publications">
 
