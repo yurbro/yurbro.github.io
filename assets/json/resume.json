@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Yu Zhang",
-    "label": "PhD Researcher and Research Assistant",
+    "label": "PhD Researcher and Research Fellow",
     "image": "",
     "email": "yu.zhang@surrey.ac.uk",
     "url": "https://yurbro.github.io",
-    "summary": "PhD researcher in Chemical and Process Engineering at the University of Surrey, working at the interface of AI, digital twins and data-driven engineering. Research spans data-efficient formulation and drug-delivery design, uncertainty-aware modelling, scientific evidence extraction and reproducible machine learning with real-world clinical data.",
+    "summary": "PhD researcher in Chemical and Process Engineering at the University of Surrey, working at the interface of AI, digital twins and data-driven engineering. Research spans data-efficient formulation and drug-delivery design, uncertainty-aware modelling, scientific evidence extraction and reproducible machine learning with real-world clinical data. Also contributes to battery intelligence research through data processing, computational algorithms and research software.",
     "location": {
       "city": "Guildford",
       "countryCode": "GB",
@@ -15,7 +15,7 @@
       {
         "network": "Google Scholar",
         "username": "Yu Zhang",
-        "url": "https://scholar.google.com/citations?user=W6Jdq00AAAAJ&hl=en"
+        "url": "https://scholar.google.com/citations?user=W6Jdq00AAAAJ&hl=en&inst=15262737669262836719"
       },
       {
         "network": "ORCID",
@@ -30,6 +30,20 @@
     ]
   },
   "work": [
+    {
+      "name": "University of Surrey",
+      "position": "Research Fellow — Advanced Battery Intelligence and Technology Development",
+      "url": "https://www.surrey.ac.uk/people/kai-yang",
+      "location": "Advanced Technology Institute (ATI), Guildford, UK",
+      "startDate": "2026-09",
+      "endDate": "",
+      "summary": "Work with Dr Kai Yang on an EPSRC IAA project in battery intelligence, contributing data processing, algorithm development and research software workflows.",
+      "highlights": [
+        "Process and organise experimental datasets for computational analysis.",
+        "Contribute to algorithm development and data-driven research workflows.",
+        "Develop research software to support analysis and workflow automation."
+      ]
+    },
     {
       "name": "University of Surrey",
       "position": "Research Assistant — Clinical Machine Learning",
@@ -123,7 +137,7 @@
       "courses": [
         "Expected thesis submission: late 2026 / early 2027.",
         "Digital twin and AI methods for topical formulation design",
-        "Supervisors: Professor Tao Chen and Dr Dimitrios Tsaoulidis"
+        "Supervisors: Professor Tao Chen and Assoc. Prof. Dimitrios Tsaoulidis"
       ]
     },
     {
@@ -244,6 +258,18 @@
     }
   ],
   "projects": [
+    {
+      "name": "Battery Intelligence",
+      "summary": "Data processing, computational algorithms and research software for an EPSRC IAA battery intelligence project at Surrey's Advanced Technology Institute, working with Dr Kai Yang.",
+      "highlights": [
+        "Experimental data processing",
+        "Algorithm development",
+        "Research software"
+      ],
+      "startDate": "2026-09",
+      "endDate": "",
+      "url": "https://yurbro.github.io/projects/battery-intelligence/"
+    },
     {
       "name": "Adaptive Batch Optimisation",
       "summary": "Active learning for formulation optimisation under a limited per-batch experimental budget.",

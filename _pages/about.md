@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Researcher and Research Assistant · University of Surrey
+subtitle: PhD Researcher and Research Fellow · University of Surrey
 
 profile:
   align: right
@@ -29,6 +29,8 @@ latest_posts:
 I develop **data-efficient machine learning and digital-twin methods for engineering and healthcare**. My work combines probabilistic modelling, Bayesian optimisation, active learning, uncertainty quantification and interpretable models to support decisions when experiments or observations are limited.
 
 At Surrey, my PhD focuses on **AI-enabled formulation design and drug delivery**. Alongside my doctoral research, I work with Dr Xilu Wang as a Research Assistant on **real-world clinical data in assisted reproduction (IVF)**, developing reproducible workflows for outcome modelling and patient-aware, time-aware validation.
+
+I also work as a **Research Fellow in Advanced Battery Intelligence and Technology Development** at Surrey\'s Advanced Technology Institute (ATI), with [Dr Kai Yang](https://www.surrey.ac.uk/people/kai-yang). My contribution focuses on data processing, algorithm development and research software within an EPSRC IAA project. [Project overview](/projects/battery-intelligence/).
 
 <div class="hero-actions">
   <a class="btn btn-primary" href="https://yurbro.github.io/projects/">Explore my research</a>
@@ -87,7 +89,7 @@ At Surrey, my PhD focuses on **AI-enabled formulation design and drug delivery**
 
 ## Background
 
-I am pursuing a PhD in **Chemical and Process Engineering at the University of Surrey**, supervised by [Professor Tao Chen](https://www.surrey.ac.uk/people/tao-chen) and [Dr Dimitrios Tsaoulidis](https://www.surrey.ac.uk/people/dimitrios-tsaoulidis). **Expected thesis submission: late 2026 / early 2027.**
+I am pursuing a PhD in **Chemical and Process Engineering at the University of Surrey**, supervised by [Professor Tao Chen](https://www.surrey.ac.uk/people/tao-chen) and [Assoc. Prof. Dimitrios Tsaoulidis](https://www.surrey.ac.uk/people/dimitrios-tsaoulidis). **Expected thesis submission: late 2026 / early 2027.**
 
 My research experience includes placements at **Jagiellonian University, Poland** (June-August 2026), supported by COST STSM, the UK Turing Scheme and FEPS, and at **West China Hospital, Sichuan University** (January-March 2025).
 
