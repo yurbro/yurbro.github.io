@@ -30,7 +30,7 @@ I develop **data-efficient machine learning and digital-twin methods for enginee
 
 At Surrey, my PhD focuses on **AI-enabled formulation design and drug delivery**. Alongside my doctoral research, I work with Dr Xilu Wang as a Research Assistant on **real-world clinical data in assisted reproduction (IVF)**, developing reproducible workflows for outcome modelling and patient-aware, time-aware validation.
 
-I also work as a **Research Fellow in Advanced Battery Intelligence and Technology Development** at Surrey\'s Advanced Technology Institute (ATI), with [Dr Kai Yang](https://www.surrey.ac.uk/people/kai-yang). My contribution focuses on data processing, algorithm development and research software within an EPSRC IAA project. [Project overview](/projects/battery-intelligence/).
+I also work as a **Research Fellow in Advanced Battery Intelligence and Technology Development** at Surrey's Advanced Technology Institute (ATI), with [Dr Kai Yang](https://www.surrey.ac.uk/people/kai-yang). My contribution focuses on data processing, algorithm development and research software within an EPSRC IAA project. [Project overview](/projects/battery-intelligence/).
 
 <div class="hero-actions">
   <a class="btn btn-primary" href="https://yurbro.github.io/projects/">Explore my research</a>

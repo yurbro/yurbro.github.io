@@ -261,11 +261,7 @@
     {
       "name": "Battery Intelligence",
       "summary": "Data processing, computational algorithms and research software for an EPSRC IAA battery intelligence project at Surrey's Advanced Technology Institute, working with Dr Kai Yang.",
-      "highlights": [
-        "Experimental data processing",
-        "Algorithm development",
-        "Research software"
-      ],
+      "highlights": ["Experimental data processing", "Algorithm development", "Research software"],
       "startDate": "2026-09",
       "endDate": "",
       "url": "https://yurbro.github.io/projects/battery-intelligence/"
