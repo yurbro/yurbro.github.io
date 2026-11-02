@@ -28,7 +28,7 @@ latest_posts:
 
 I develop **data-efficient machine learning and digital-twin methods for engineering and healthcare**. My work combines probabilistic modelling, Bayesian optimisation, active learning, uncertainty quantification and interpretable models to support decisions when experiments or observations are limited.
 
-At Surrey, my PhD focuses on **AI-enabled formulation design and drug delivery**. Alongside my doctoral research, I work with Dr Xilu Wang as a Research Assistant on **real-world clinical data in assisted reproduction (IVF)**, developing reproducible workflows for outcome modelling and patient-aware, time-aware validation.
+At Surrey, my PhD focuses on **AI-enabled formulation design and drug delivery**. Alongside my doctoral research, I work with [Dr Xilu Wang](https://www.surrey.ac.uk/people/xilu-wang) as a Research Assistant on **real-world clinical data in assisted reproduction (IVF)**, developing reproducible workflows for outcome modelling and patient-aware, time-aware validation.
 
 I also work as a **Research Fellow in Advanced Battery Intelligence and Technology Development** at Surrey's Advanced Technology Institute (ATI), with [Dr Kai Yang](https://www.surrey.ac.uk/people/kai-yang). My contribution focuses on data processing, algorithm development and research software within an EPSRC IAA project. [Project overview](/projects/battery-intelligence/).
 
@@ -91,7 +91,7 @@ I also work as a **Research Fellow in Advanced Battery Intelligence and Technolo
 
 I am pursuing a PhD in **Chemical and Process Engineering at the University of Surrey**, supervised by [Professor Tao Chen](https://www.surrey.ac.uk/people/tao-chen) and [Assoc. Prof. Dimitrios Tsaoulidis](https://www.surrey.ac.uk/people/dimitrios-tsaoulidis). **Expected thesis submission: late 2026 / early 2027.**
 
-My research experience includes placements at **Jagiellonian University, Poland** (June-August 2026), supported by COST STSM, the UK Turing Scheme and FEPS, and at **West China Hospital, Sichuan University** (January-March 2025).
+My research experience includes placements at **Jagiellonian University, Poland** (June-August 2026), working with [Professor Barbara Wiśniowska](https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM2060f0f314494b8d874f90774879cfba?ps=20&lang=pl&title=Person%2Bprofile%2B%25E2%2580%2593%2BBarbara%2BWisniowska%2B%25E2%2580%2593%2BJagiellonian%2BUniversity%2BMedical%2BCollege&pn=1&cid=402696) and [Dr Laura Krumpholz](https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM7ee164e3845b4644bcb8cd0505a2cd76/), supported by COST STSM, the UK Turing Scheme and FEPS, and at **West China Hospital, Sichuan University** (January-March 2025).
 
 Before Surrey, I completed an MEng in Control Science and Engineering at China University of Petroleum - Beijing and a BEng in Automation at Panzhihua University. My earlier work spans industrial process monitoring, fault diagnosis, data-driven analysis of reservoir-simulation outputs and energy-market software. This background informs my focus on reproducible models that remain useful under real experimental and data constraints.
 
