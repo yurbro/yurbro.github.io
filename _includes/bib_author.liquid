@@ -17,7 +17,13 @@
 {%- endfor -%}
 {%- capture bib_author_name -%}{{ bib_author.first | escape }} {{ bib_author_last_html }}{%- endcapture -%}
 {%- if bib_author_is_self -%}
-  <em>{{ bib_author_name }}</em>
+  <a
+    href="https://scholar.google.com/citations?user=W6Jdq00AAAAJ&amp;hl=en&amp;inst=15262737669262836719"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <em>{{ bib_author_name }}</em>
+  </a>
 {%- elsif bib_coauthor_url -%}
   <a href="{{ bib_coauthor_url | escape }}" target="_blank" rel="noopener noreferrer">{{ bib_author_name }}</a>
 {%- else -%}
