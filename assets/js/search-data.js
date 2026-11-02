@@ -103,6 +103,11 @@ ninja.data = [{
           description: "Reproducible workflows for assisted-reproduction data, including outcome definition, feature construction and patient-aware, time-aware validation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/clinical-machine-learning/";
+            },},{id: "projects-battery-intelligence",
+          title: 'Battery Intelligence',
+          description: "Data processing, computational algorithms and research software for battery intelligence at Surrey&#39;s Advanced Technology Institute.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/battery-intelligence/";
             },},{
         id: 'social-email',
         title: 'email',
