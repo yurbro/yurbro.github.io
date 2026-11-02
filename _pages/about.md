@@ -38,7 +38,6 @@ At Surrey, my PhD focuses on **AI-enabled formulation design and drug delivery**
 
 <div class="research-stats" aria-label="Research at a glance">
   <div class="stat-card"><strong>{% bibliography_count %}</strong><span>peer-reviewed papers (incl. accepted)</span></div>
-  <div class="stat-card"><strong>4</strong><span>first-author PhD papers</span></div>
   <div class="stat-card"><strong>2026/27</strong><span>expected thesis submission</span></div>
   <div class="stat-card"><strong>Open</strong><span>code and reproducibility</span></div>
 </div>
