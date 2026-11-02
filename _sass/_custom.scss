@@ -17,6 +17,8 @@ html[data-theme="dark"] {
 }
 
 body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
   background-image: radial-gradient(circle at 10% 0%, var(--yu-teal-soft), transparent 32rem),
     linear-gradient(var(--global-bg-color), var(--global-bg-color));
   background-attachment: fixed;
