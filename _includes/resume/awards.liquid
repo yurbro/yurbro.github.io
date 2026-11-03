@@ -20,8 +20,11 @@
             {% if content.hosts %}
               Hosted by
               {% for host in content.hosts %}
-                <a href="{{ host.url }}" target="_blank" rel="noopener noreferrer">{{ host.name }}</a>{% unless forloop.last %} and {% endunless %}
-              {% endfor %}.
+                {% unless forloop.first %}
+                  and
+                {% endunless %}
+                <a href="{{ host.url }}" target="_blank" rel="noopener noreferrer">{{ host.name }}</a>
+              {% endfor %}
             {% endif %}
           </h6>
         </div>
