@@ -11,24 +11,17 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "Peer-reviewed work in AI-enabled formulation design, experimental decision-making and industrial process intelligence.",
+          description: "Published and accepted research, with preprints listed separately.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Research in formulation design, clinical machine learning, interpretable modelling and scientific data engineering.",
+        },{id: "nav-research",
+          title: "research",
+          description: "Selected research projects and open-source work in AI-driven engineering.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
-          },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Open research code, reproducibility materials and active projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
           },
         },{id: "nav-activities",
           title: "activities",
