@@ -108,6 +108,11 @@ ninja.data = [{
           description: "Data processing, computational algorithms and research software for battery intelligence at Surrey&#39;s Advanced Technology Institute.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/battery-intelligence/";
+            },},{id: "projects-skinphysio-extract",
+          title: 'SkinPhysio-Extract',
+          description: "Evidence-grounded extraction and provenance auditing of quantitative skin physiology data during a Jagiellonian research visit.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/skinphysio-extract/";
             },},{
         id: 'social-email',
         title: 'email',
