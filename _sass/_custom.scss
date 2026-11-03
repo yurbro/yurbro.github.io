@@ -974,3 +974,143 @@ body {
     width: 6rem !important;
   }
 }
+
+/* Phase 2: simplify research, publications, activities and CV presentation. */
+.homepage-surname {
+  font-weight: 400;
+}
+
+.post-header .post-title .homepage-surname {
+  font-weight: 400;
+}
+
+.projects .card {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  box-shadow: none !important;
+  padding-bottom: 1rem;
+}
+
+.projects .card:hover {
+  box-shadow: none !important;
+}
+
+.projects .card .card-title {
+  color: var(--global-text-color);
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.projects .card .card-text {
+  color: var(--global-text-color-light);
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+.repository-card {
+  border: 0;
+  border-bottom: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  min-height: 0;
+}
+
+.repository-card:hover {
+  transform: none;
+}
+
+.repository-card-icon,
+.github-profile-mark {
+  background: transparent;
+  color: var(--global-theme-color);
+}
+
+.activity-list {
+  border-left: 1px solid var(--global-divider-color);
+}
+
+.activity-entry::before {
+  background: var(--global-text-color-light);
+}
+
+.activity-role,
+.activity-date {
+  color: var(--global-text-color-light);
+}
+
+.activity-photo img {
+  border: 0;
+  border-radius: 0.3rem;
+}
+
+.activity-service-grid {
+  gap: 1.25rem;
+}
+
+.activity-service-card {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  padding: 0.75rem 0 0;
+}
+
+.activity-service-card h3 {
+  font-size: 0.98rem;
+}
+
+.cv .card {
+  background: transparent;
+  border-color: var(--global-divider-color);
+  border-radius: 0.3rem;
+  box-shadow: none !important;
+}
+
+.cv .card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.cv .list-group-item {
+  padding-bottom: 0.85rem;
+  padding-top: 0.85rem;
+}
+
+.cv .badge {
+  background: transparent !important;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.2rem;
+  color: var(--global-text-color-light) !important;
+  font-size: 0.69rem;
+  font-weight: 500 !important;
+  line-height: 1.45;
+  white-space: normal;
+}
+
+.cv .resume-work-title,
+.cv .title {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.publications ol.bibliography li {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 1rem;
+  padding-top: 0.35rem;
+}
+
+.publications ol.bibliography li:last-child {
+  border-bottom: 0;
+}
+
+.publications .title {
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .activity-service-grid {
+    grid-template-columns: 1fr;
+  }
+}
