@@ -3,8 +3,7 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: Open research code, reproducibility materials and active projects.
-nav: true
-nav_order: 4
+nav: false
 ---
 
 ## GitHub profile
