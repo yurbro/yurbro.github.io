@@ -832,12 +832,12 @@ body {
 /* Minimal academic visual language: restrained blue accents and paper-like spacing. */
 :root {
   --yu-navy: #222222;
-  --yu-teal: #315c7d;
+  --yu-teal: #1e5683;
   --yu-teal-soft: rgba(49, 92, 125, 0.055);
   --yu-amber: #315c7d;
   --yu-card-border: rgba(24, 36, 48, 0.12);
-  --global-theme-color: #315c7d;
-  --global-hover-color: #244861;
+  --global-theme-color: #1e5683;
+  --global-hover-color: #123f66;
   --global-hover-text-color: #ffffff;
   --global-text-color: #222222;
   --global-text-color-light: #737373;
@@ -846,12 +846,12 @@ body {
 
 html[data-theme="dark"] {
   --yu-navy: #e8edf2;
-  --yu-teal: #91b9d4;
+  --yu-teal: #90c0e7;
   --yu-teal-soft: rgba(145, 185, 212, 0.08);
   --yu-amber: #91b9d4;
   --yu-card-border: rgba(225, 232, 240, 0.16);
-  --global-theme-color: #91b9d4;
-  --global-hover-color: #b8d2e4;
+  --global-theme-color: #90c0e7;
+  --global-hover-color: #b9d8f0;
   --global-hover-text-color: #1c1c1d;
   --global-text-color: #e8edf2;
   --global-text-color-light: #a4adb6;
