@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Researcher and Research Fellow · University of Surrey
+subtitle: PhD Researcher & Research Fellow · University of Surrey
 
 profile:
   align: right
@@ -18,89 +18,24 @@ social: true
 announcements:
   enabled: true
   scrollable: false
-  limit: 4
+  limit: 5
 
 latest_posts:
   enabled: false
 ---
 
-<div class="hero-kicker">AI for engineering and science · Digital twins · Clinical machine learning</div>
+I am a PhD researcher in **Chemical and Process Engineering** at the [University of Surrey](https://www.surrey.ac.uk/), supervised by [Prof. Tao Chen](https://www.surrey.ac.uk/people/tao-chen) and [Assoc. Prof. Dimitrios Tsaoulidis](https://www.surrey.ac.uk/people/dimitrios-tsaoulidis).
 
-I develop **data-efficient machine learning and digital-twin methods for engineering and healthcare**. My work combines probabilistic modelling, Bayesian optimisation, active learning, uncertainty quantification and interpretable models to support decisions when experiments or observations are limited.
+My research develops **AI-driven modelling, optimisation and digital-twin methods** for engineering and healthcare. I focus on data-efficient learning, interpretable models and scientific evidence extraction, with applications in dermal drug formulation and process systems.
 
-At Surrey, my PhD focuses on **AI-enabled formulation design and drug delivery**. Alongside my doctoral research, I work with [Dr Xilu Wang](https://www.surrey.ac.uk/people/xilu-wang) as a Research Assistant on **real-world clinical data in assisted reproduction (IVF)**, developing reproducible workflows for outcome modelling and patient-aware, time-aware validation.
+Alongside my PhD, I work on [clinical machine learning for IVF](/projects/clinical-machine-learning/) with [Dr Xilu Wang](https://www.surrey.ac.uk/people/xilu-wang) and [battery intelligence](/projects/battery-intelligence/) with [Dr Kai Yang](https://www.surrey.ac.uk/people/kai-yang) at Surrey.
 
-I also work as a **Research Fellow in Advanced Battery Intelligence and Technology Development** at Surrey's Advanced Technology Institute (ATI), with [Dr Kai Yang](https://www.surrey.ac.uk/people/kai-yang). My contribution focuses on data processing, algorithm development and research software within an EPSRC IAA project. [Project overview](/projects/battery-intelligence/).
+## Research interests
 
-<div class="hero-actions">
-  <a class="btn btn-primary" href="https://yurbro.github.io/projects/">Explore my research</a>
-  <a class="btn btn-outline-primary" href="https://yurbro.github.io/publications/">View publications</a>
-  <a class="btn btn-outline-primary" href="https://yurbro.github.io/cv/">Academic CV</a>
-</div>
+Machine learning · Digital twins · Bayesian optimisation · Active learning · Symbolic regression · Scientific LLMs · AI for engineering
 
-<div class="research-stats" aria-label="Research at a glance">
-  <div class="stat-card"><strong>{% bibliography_count %}</strong><span>peer-reviewed papers (incl. accepted)</span></div>
-  <div class="stat-card"><strong>2026/27</strong><span>expected thesis submission</span></div>
-  <div class="stat-card"><strong>Open</strong><span>code and reproducibility</span></div>
-</div>
+## Academic background
 
-## Formulation research programme
+Previously, I earned an **MEng in Control Science and Engineering** from China University of Petroleum–Beijing and a **BEng in Automation** from Panzhihua University. I completed research placements at [Jagiellonian University](https://en.uj.edu.pl/) (2026) and West China Hospital, Sichuan University (2025).
 
-<div class="focus-grid">
-  <div class="focus-card">
-    <div class="focus-icon"><i class="fa-solid fa-flask-vial"></i></div>
-    <h3>Measure</h3>
-    <p>IVRT and IVPT experiments generate time-resolved evidence about drug release and permeation from topical formulations.</p>
-  </div>
-  <div class="focus-card">
-    <div class="focus-icon"><i class="fa-solid fa-chart-line"></i></div>
-    <h3>Learn</h3>
-    <p>Gaussian processes and hybrid models learn formulation-performance relationships while preserving predictive uncertainty.</p>
-  </div>
-  <div class="focus-card">
-    <div class="focus-icon"><i class="fa-solid fa-route"></i></div>
-    <h3>Decide</h3>
-    <p>Active learning, Bayesian optimisation and early stopping focus each experimental batch on the most useful decisions.</p>
-  </div>
-  <div class="focus-card">
-    <div class="focus-icon"><i class="fa-solid fa-brain"></i></div>
-    <h3>Explain</h3>
-    <p>Domain-constrained symbolic regression and scientific LLMs connect predictions with mechanisms and literature evidence.</p>
-  </div>
-</div>
-
-## Current research directions
-
-- **Clinical machine learning** - defining outcomes, constructing reliable features and developing patient-aware, time-aware validation for assisted-reproduction data. [Research overview](/projects/clinical-machine-learning/).
-- **Adaptive formulation optimisation** - allocating small experimental batches between performance-seeking and information-seeking candidates.
-- **Early experimental decision-making** - forecasting final outcomes from partial IVPT/IVRT trajectories and controlling false stops.
-- **Interpretable dynamic modelling** - embedding physical and mathematical constraints into symbolic regression for drug-release kinetics.
-- **Scientific LLM systems** - extracting traceable formulation and permeation evidence from literature and building reusable research datasets.
-
-<div class="research-callout">
-  <span class="callout-label">Current build</span>
-  <div>
-    <strong>SkinMiner</strong> is an LLM-powered framework for mining dermal formulation evidence with provenance, verification and structured outputs.
-    The manuscript is under review at <em>International Journal of Pharmaceutics</em> and is available as an SSRN preprint.
-    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7620063">Read the preprint →</a>
-    <a href="https://github.com/yurbro/skinminer">Code →</a>
-  </div>
-</div>
-
-## Academic activities and peer review
-
-I contribute to scholarly peer review for **Journal of Automation and Intelligence** and **Franklin Open**, and have served as a reviewer for **China Automation Congress (CAC 2023–2025)**. My conference record includes an oral presentation at **CHISA 2026** and other academic events.
-
-[Explore conferences, service and photo journal](/activities/).
-
-## Background
-
-I am pursuing a PhD in **Chemical and Process Engineering at the University of Surrey**, supervised by [Professor Tao Chen](https://www.surrey.ac.uk/people/tao-chen) and [Assoc. Prof. Dimitrios Tsaoulidis](https://www.surrey.ac.uk/people/dimitrios-tsaoulidis). **Expected thesis submission: late 2026 / early 2027.**
-
-My research experience includes placements at **Jagiellonian University, Poland** (June-August 2026), working with [Professor Barbara Wiśniowska](https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM2060f0f314494b8d874f90774879cfba?ps=20&lang=pl&title=Person%2Bprofile%2B%25E2%2580%2593%2BBarbara%2BWisniowska%2B%25E2%2580%2593%2BJagiellonian%2BUniversity%2BMedical%2BCollege&pn=1&cid=402696) and [Dr Laura Krumpholz](https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM7ee164e3845b4644bcb8cd0505a2cd76/), supported by COST STSM, the UK Turing Scheme and FEPS, and at **West China Hospital, Sichuan University** (January-March 2025).
-
-Before Surrey, I completed an MEng in Control Science and Engineering at China University of Petroleum - Beijing and a BEng in Automation at Panzhihua University. My earlier work spans industrial process monitoring, fault diagnosis, data-driven analysis of reservoir-simulation outputs and energy-market software. This background informs my focus on reproducible models that remain useful under real experimental and data constraints.
-
-<div class="tag-cloud" aria-label="Methods and domains">
-  <span>Gaussian processes</span><span>Active learning</span><span>Bayesian optimisation</span><span>Symbolic regression</span><span>Uncertainty quantification</span><span>Temporal prediction</span><span>LLMs</span><span>Digital twins</span><span>Clinical data</span><span>IVRT / IVPT</span><span>Python</span>
-</div>
+My research and academic service include an [oral presentation at CHISA 2026 and peer-review contributions](/activities/). For a fuller record of positions, teaching, awards and scholarly service, see my [academic CV](/cv/).
