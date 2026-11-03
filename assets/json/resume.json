@@ -164,6 +164,20 @@
       "startDate": "2015-09",
       "endDate": "2019-07",
       "courses": []
+    },
+    {
+      "institution": "Jagiellonian University Medical College",
+      "location": "Kraków, Poland",
+      "url": "https://en.uj.edu.pl/",
+      "area": "Faculty of Pharmacy, Department of Social Pharmacy · Non-degree research placement under COST Action CA21108 (NETSKINMODELS)",
+      "studyType": "Visiting PhD Researcher",
+      "startDate": "2026-06",
+      "endDate": "2026-08",
+      "courses": [
+        "Research visit: 15 June – 14 August 2026; home PhD institution: University of Surrey.",
+        "Hosted by Prof. Barbara Wiśniowska; collaborated with Dr Laura Krumpholz.",
+        "SkinPhysio-Extract: LLM-assisted extraction, provenance auditing and verification of quantitative skin physiology evidence."
+      ]
     }
   ],
   "publications": [
