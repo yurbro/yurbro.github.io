@@ -28,6 +28,18 @@
   - firstname: ["Mengjia"]
     url: https://scholar.google.com/citations?user=9fz9eboAAAAJ&hl=en
 
+"wu":
+  - firstname: ["Pengcheng"]
+    url: https://scholar.google.com/citations?hl=en&user=PyytFskAAAAJ&view_op=list_works&sortby=pubdate
+
+"li":
+  - firstname: ["Haoran"]
+    url: https://scholar.google.com/citations?user=l44HqeYAAAAJ&hl=en&oi=sra
+
+"zou":
+  - firstname: ["Xiaobo"]
+    url: https://scholar.google.com/citations?user=-QMNiy8AAAAJ&hl=en
+
 "adams":
   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
