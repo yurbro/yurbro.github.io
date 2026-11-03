@@ -9,6 +9,11 @@ nav_order: 6
 
 ## University of Surrey
 
+### 2026–27
+
+- **CHEM042 - Advanced Pharmaceutical Formulations**
+  Teaching support in formulation science, pharmaceutical product design and advanced delivery systems.
+
 ### 2025-26
 
 - **ENG1080 - Science Principles for Engineers**
