@@ -23,12 +23,7 @@ nav_order: 4.5
         {% if event.photos.size > 0 %}
           <div class="activity-gallery">
             {% for photo in event.photos %}
-              <figure class="activity-photo">
-                <a href="{{ photo.src | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="View photo: {{ photo.alt | escape }}">
-                  <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy">
-                </a>
-                {% if photo.caption %}<figcaption>{{ photo.caption }}</figcaption>{% endif %}
-              </figure>
+              {% include activities/photo.liquid photo=photo %}
             {% endfor %}
           </div>
         {% endif %}
