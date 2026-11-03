@@ -1,0 +1,25 @@
+# Academic conference record. Add personally owned, approved photos to assets/img/activities/.
+# Event photos are optional; blank arrays are intentionally not rendered as fake galleries.
+- title: "CHISA 2026 — 28th International Congress of Chemical and Process Engineering"
+  year: "2026"
+  when: "24 August 2026"
+  location: "Prague, Czech Republic"
+  role: "Oral presentation"
+  detail: "LLM-powered multimodal agentic data mining for dermal formulation science."
+  photos: []
+
+- title: "ABCP 2025 Annual Conference"
+  year: "2025"
+  when: "2025"
+  location: ""
+  role: "Conference volunteer"
+  detail: "Volunteer contribution recognised by an appreciation certificate dated 12 September 2025."
+  photos: []
+
+- title: "University of Surrey Postgraduate and Early Career Researcher Conference"
+  year: "2025"
+  when: "30 April – 1 May 2025"
+  location: "Manor Park Campus, University of Surrey, UK"
+  role: "Attendee"
+  detail: "Participated in the Postgraduate and Early Career Researcher Conference."
+  photos: []
