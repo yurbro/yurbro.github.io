@@ -159,6 +159,20 @@
       "startDate": "2015-09",
       "endDate": "2019-07",
       "courses": []
+    },
+    {
+      "institution": "Jagiellonian University Medical College",
+      "location": "Kraków, Poland",
+      "url": "https://en.uj.edu.pl/",
+      "area": "Faculty of Pharmacy, Department of Social Pharmacy · Non-degree research placement under COST Action CA21108 (NETSKINMODELS)",
+      "studyType": "Visiting PhD Researcher",
+      "startDate": "2026-06",
+      "endDate": "2026-08",
+      "courses": [
+        "Research visit: 15 June – 14 August 2026; home PhD institution: University of Surrey.",
+        "Hosted by Prof. Barbara Wiśniowska; collaborated with Dr Laura Krumpholz.",
+        "SkinPhysio-Extract: LLM-assisted extraction, provenance auditing and verification of quantitative skin physiology evidence."
+      ]
     }
   ],
   "publications": [
@@ -312,7 +326,17 @@
       "title": "Short-Term Scientific Mission and Mobility Funding",
       "date": "2026-06",
       "awarder": "COST STSM, UK Turing Scheme and FEPS",
-      "summary": "€2.8K COST STSM, £1K UK Turing Scheme and £1K FEPS funding for a June-August 2026 research placement at Jagiellonian University, Poland, hosted by Professor Barbara Wiśniowska and Dr Laura Krumpholz."
+      "summary": "€2.8K COST STSM, £1K UK Turing Scheme and £1K FEPS funding for a June–August 2026 research placement at Jagiellonian University, Poland.",
+      "hosts": [
+        {
+          "name": "Prof. Barbara Wiśniowska",
+          "url": "https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM2060f0f314494b8d874f90774879cfba"
+        },
+        {
+          "name": "Dr Laura Krumpholz",
+          "url": "https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM7ee164e3845b4644bcb8cd0505a2cd76/"
+        }
+      ]
     },
     {
       "title": "UK Turing Scheme Research Placement",
