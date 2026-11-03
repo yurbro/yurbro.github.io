@@ -34,8 +34,12 @@ Alongside my PhD, I work on [clinical machine learning for IVF](/projects/clinic
 
 Machine learning · Digital twins · Bayesian optimisation · Active learning · Symbolic regression · Scientific LLMs · AI for engineering
 
+## Visiting research
+
+During a **Visiting PhD Researcher** placement at [Jagiellonian University Medical College](https://en.uj.edu.pl/) (15 June–14 August 2026), I worked with [Prof. Barbara Wiśniowska](https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM2060f0f314494b8d874f90774879cfba) and [Dr Laura Krumpholz](https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM7ee164e3845b4644bcb8cd0505a2cd76/) on [SkinPhysio-Extract](/projects/skinphysio-extract/), an evidence-grounded workflow for extracting and verifying quantitative skin physiology data from literature.
+
 ## Academic background
 
-Previously, I earned an **MEng in Control Science and Engineering** from China University of Petroleum–Beijing and a **BEng in Automation** from Panzhihua University. I completed a research placement at [Jagiellonian University](https://en.uj.edu.pl/) (2026), hosted by [Prof. Barbara Wiśniowska](https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM2060f0f314494b8d874f90774879cfba) and [Dr Laura Krumpholz](https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM7ee164e3845b4644bcb8cd0505a2cd76/), and a placement at West China Hospital, Sichuan University (2025).
+Previously, I earned an **MEng in Control Science and Engineering** from China University of Petroleum–Beijing and a **BEng in Automation** from Panzhihua University. I also completed a research placement at West China Hospital, Sichuan University (2025).
 
 My research and academic service include an [oral presentation at CHISA 2026 and peer-review contributions](/activities/). For a fuller record of positions, teaching, awards and scholarly service, see my [academic CV](/cv/).
