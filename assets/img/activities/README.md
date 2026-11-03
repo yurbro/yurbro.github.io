@@ -3,6 +3,7 @@
 This folder stores personally owned photographs approved for public display on the academic website.
 
 To add photos:
+
 1. Upload compressed JPG/WebP images here (suggested: 1600 px wide or less; remove location metadata if undesired).
 2. Edit `_data/academic_activities.yml` and add items to the relevant event's `photos:` list:
 
