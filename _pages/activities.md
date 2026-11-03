@@ -7,7 +7,7 @@ nav: true
 nav_order: 4.5
 ---
 
-<p class="project-intro">A record of research presentations, conferences and scholarly service. Event photographs will appear alongside each entry when cleared images are available.</p>
+Research presentations, conference participation, scholarly service and a photo journal of academic events.
 
 ## Conferences and presentations
 
@@ -30,16 +30,6 @@ nav_order: 4.5
       </div>
     </section>
   {% endfor %}
-</div>
-
-## Photo journal
-
-<div class="activity-photo-note">
-  <i class="fa-regular fa-images" aria-hidden="true"></i>
-  <div>
-    <strong>Conference photographs</strong>
-    <p>Personal conference photos can be attached to the relevant event above. Only approved images will be published; attendance and reviewer certificates are not represented as event photographs.</p>
-  </div>
 </div>
 
 ## Academic service
