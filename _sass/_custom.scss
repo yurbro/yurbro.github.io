@@ -828,3 +828,149 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Minimal academic visual language: restrained blue accents and paper-like spacing. */
+:root {
+  --yu-navy: #222222;
+  --yu-teal: #315c7d;
+  --yu-teal-soft: rgba(49, 92, 125, 0.055);
+  --yu-amber: #315c7d;
+  --yu-card-border: rgba(24, 36, 48, 0.12);
+  --global-theme-color: #315c7d;
+  --global-hover-color: #244861;
+  --global-hover-text-color: #ffffff;
+  --global-text-color: #222222;
+  --global-text-color-light: #737373;
+  --global-divider-color: rgba(24, 36, 48, 0.11);
+}
+
+html[data-theme="dark"] {
+  --yu-navy: #e8edf2;
+  --yu-teal: #91b9d4;
+  --yu-teal-soft: rgba(145, 185, 212, 0.08);
+  --yu-amber: #91b9d4;
+  --yu-card-border: rgba(225, 232, 240, 0.16);
+  --global-theme-color: #91b9d4;
+  --global-hover-color: #b8d2e4;
+  --global-hover-text-color: #1c1c1d;
+  --global-text-color: #e8edf2;
+  --global-text-color-light: #a4adb6;
+  --global-divider-color: rgba(225, 232, 240, 0.14);
+}
+
+body {
+  background-image: none;
+  background-attachment: scroll;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.post-header {
+  margin-bottom: 1.3rem;
+
+  .post-title {
+    font-size: clamp(1.8rem, 3vw, 2.15rem);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+  }
+
+  .desc {
+    font-size: 0.92rem;
+    letter-spacing: 0;
+    margin-top: 0.4rem;
+  }
+}
+
+.post article {
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -0.018em;
+    margin-bottom: 0.8rem;
+    margin-top: 2.25rem;
+  }
+
+  p,
+  li {
+    line-height: 1.68;
+  }
+}
+
+.navbar .nav-link {
+  font-weight: 400;
+}
+
+.profile {
+  img {
+    border-color: var(--yu-card-border);
+    box-shadow: none !important;
+  }
+
+  .more-info {
+    color: var(--global-text-color-light);
+    font-size: 0.76rem;
+    line-height: 1.55;
+  }
+}
+
+.news {
+  .table {
+    th,
+    td {
+      border-bottom: 1px solid var(--global-divider-color);
+      padding-bottom: 0.6rem;
+      padding-top: 0.6rem;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--global-text-color-light);
+      font-size: 0.79rem;
+      font-weight: 400;
+      white-space: nowrap;
+      width: 9rem !important;
+    }
+  }
+}
+
+.publications {
+  .title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  .links a.btn {
+    border-radius: 0.25rem;
+  }
+}
+
+.projects .card,
+.repository-card,
+.github-profile-panel,
+.activity-service-card {
+  border-color: var(--yu-card-border);
+  border-radius: 0.35rem;
+  box-shadow: none;
+}
+
+.github-profile-panel {
+  background: var(--global-bg-color);
+}
+
+.project-intro {
+  border-color: var(--global-divider-color);
+}
+
+.social .contact-icons a:hover {
+  color: var(--yu-teal);
+}
+
+@media (max-width: 575px) {
+  .news .table th {
+    font-size: 0.72rem;
+    white-space: normal;
+    width: 6rem !important;
+  }
+}
