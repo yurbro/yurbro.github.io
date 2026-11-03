@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
+        },{id: "nav-activities",
+          title: "activities",
+          description: "Conferences, presentations, academic service and a growing photo journal.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/activities/";
+          },
         },{id: "nav-cv",
           title: "cv",
           description: "Research experience, education, selected outputs and technical expertise.",
