@@ -5,8 +5,36 @@
   when: "24 August 2026"
   location: "Prague, Czech Republic"
   role: "Oral presentation"
-  detail: "LLM-powered multimodal agentic data mining for dermal formulation science."
-  photos: []
+  detail: "Delivered an oral presentation titled 'LLM-powered multimodal agentic data mining for dermal formulation science'."
+  photos:
+    - src: /assets/img/activities/chisa-2026-01-talk.jpg
+      alt: "Yu Zhang giving an oral presentation at CHISA 2026."
+      caption: "Oral presentation on LLM-powered data mining."
+    - src: /assets/img/activities/chisa-2026-02-portrait.jpg
+      alt: "Yu Zhang at the CHISA 2026 conference venue."
+      caption: "At the CHISA 2026 conference venue, Prague."
+    - src: /assets/img/activities/chisa-2026-03-welcome.jpg
+      alt: "Welcome slide at the 28th CHISA Congress."
+      caption: "Welcome to the 28th CHISA Congress."
+    - src: /assets/img/activities/chisa-2026-04-networking.jpg
+      alt: "Yu Zhang with fellow participants at CHISA 2026."
+      caption: "Networking with fellow conference participants."
+    - src: /assets/img/activities/chisa-2026-05-aiche.jpg
+      alt: "An AIChE presentation during CHISA 2026."
+      caption: "AIChE update session at CHISA 2026."
+    - src: /assets/img/activities/chisa-2026-06-music.jpg
+      alt: "A saxophone performance at the conference venue."
+      caption: "Atmosphere at the conference venue."
+    - src: /assets/img/activities/chisa-2026-07-badge.jpg
+      alt: "Yu Zhang’s CHISA 2026 attendee badge."
+      caption: "CHISA 2026 conference badge."
+    - src: /assets/img/activities/chisa-2026-08-venue.jpg
+      alt: "Exterior of the venue surroundings in Prague."
+      caption: "Conference venue surroundings."
+    - src: /assets/img/activities/chisa-2026-09-prague.jpg
+      alt: "Prague city view during the CHISA 2026 visit."
+      caption: "Prague during the conference visit."
+
 
 - title: "ABCP 2025 Annual Conference"
   year: "2025"
