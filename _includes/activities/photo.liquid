@@ -1,0 +1,9 @@
+{% assign photo = include.photo %}
+<figure class="activity-photo">
+  <a href="{{ photo.src | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="View photo: {{ photo.alt | escape }}">
+    <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy">
+  </a>
+  {% if photo.caption %}
+    <figcaption>{{ photo.caption }}</figcaption>
+  {% endif %}
+</figure>

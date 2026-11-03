@@ -87,6 +87,12 @@ I also work as a **Research Fellow in Advanced Battery Intelligence and Technolo
   </div>
 </div>
 
+## Academic activities and peer review
+
+I contribute to scholarly peer review for **Journal of Automation and Intelligence** and **Franklin Open**, and have served as a reviewer for **China Automation Congress (CAC 2023–2025)**. My conference record includes an oral presentation at **CHISA 2026** and other academic events.
+
+[Explore conferences, service and photo journal](/activities/).
+
 ## Background
 
 I am pursuing a PhD in **Chemical and Process Engineering at the University of Surrey**, supervised by [Professor Tao Chen](https://www.surrey.ac.uk/people/tao-chen) and [Assoc. Prof. Dimitrios Tsaoulidis](https://www.surrey.ac.uk/people/dimitrios-tsaoulidis). **Expected thesis submission: late 2026 / early 2027.**

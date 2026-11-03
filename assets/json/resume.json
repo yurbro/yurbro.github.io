@@ -325,6 +325,12 @@
       "date": "2023-09",
       "awarder": "China Scholarship Council and University of Surrey",
       "summary": "Full-time PhD scholarship, September 2023-September 2027. Grant No. 202306440060."
+    },
+    {
+      "title": "Outstanding Graduate Student (优秀研究生)",
+      "date": "2022",
+      "awarder": "Beijing Automation Society (北京自动化学会)",
+      "summary": "Awarded the 2022 Outstanding Graduate Student distinction."
     }
   ],
   "skills": [
@@ -439,5 +445,23 @@
       "role": "Member"
     }
   ],
-  "references": []
+  "references": [],
+  "service": {
+    "journals": [
+      {
+        "name": "Journal of Automation and Intelligence",
+        "details": "6 completed reviews recognised for October 2025 – September 2026."
+      },
+      {
+        "name": "Franklin Open",
+        "details": "7 completed reviews recognised for October 2025 – April 2026."
+      }
+    ],
+    "conferences": [
+      {
+        "name": "China Automation Congress (CAC)",
+        "details": "Reviewer recognition in 2023, 2024 and 2025."
+      }
+    ]
+  }
 }
