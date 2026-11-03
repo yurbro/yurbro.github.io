@@ -218,3 +218,68 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+/*****************************
+ * JSON Resume: work timeline
+ * Prevent long work locations from colliding with job titles.
+ *****************************/
+
+.cv .resume-work-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 9rem) minmax(0, 1fr);
+  align-items: start;
+  column-gap: 1.15rem;
+  row-gap: 0.5rem;
+}
+
+.cv .resume-work-date,
+.cv .resume-work-details {
+  min-width: 0;
+}
+
+.cv .resume-work-date .badge {
+  display: inline-block;
+  max-width: 100%;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.cv .resume-work-title {
+  margin: 0 0 0.25rem;
+  overflow-wrap: anywhere;
+}
+
+.cv .resume-work-location {
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  margin-bottom: 0.5rem;
+  overflow-wrap: break-word;
+}
+
+.cv .resume-work-institution {
+  font-size: 0.95rem;
+  margin-bottom: 0.45rem;
+}
+
+.cv .resume-work-summary {
+  font-size: 0.92rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 0.45rem;
+}
+
+.cv .resume-work-highlights {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .cv .resume-work-entry {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cv .resume-work-date .badge {
+    white-space: normal;
+  }
+}
