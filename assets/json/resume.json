@@ -148,12 +148,7 @@
       "studyType": "MEng",
       "startDate": "2020-09",
       "endDate": "2023-07",
-      "courses": [
-        "System identification",
-        "Optimal estimation",
-        "Nonlinear systems",
-        "Chemical process dynamics"
-      ]
+      "courses": ["System identification", "Optimal estimation", "Nonlinear systems", "Chemical process dynamics"]
     },
     {
       "institution": "Panzhihua University",
@@ -266,11 +261,7 @@
     {
       "name": "Battery Intelligence",
       "summary": "Data processing, computational algorithms and research software for an EPSRC IAA battery intelligence project at Surrey's Advanced Technology Institute, working with Dr Kai Yang.",
-      "highlights": [
-        "Experimental data processing",
-        "Algorithm development",
-        "Research software"
-      ],
+      "highlights": ["Experimental data processing", "Algorithm development", "Research software"],
       "startDate": "2026-09",
       "endDate": "",
       "url": "https://yurbro.github.io/projects/battery-intelligence/"
@@ -278,11 +269,7 @@
     {
       "name": "Adaptive Batch Optimisation",
       "summary": "Active learning for formulation optimisation under a limited per-batch experimental budget.",
-      "highlights": [
-        "Gaussian process regression",
-        "Expected improvement",
-        "Hypervolume contribution"
-      ],
+      "highlights": ["Gaussian process regression", "Expected improvement", "Hypervolume contribution"],
       "startDate": "2024",
       "endDate": "2026",
       "url": "https://github.com/yurbro/Yu-Zhang-PhD/tree/main/AL_AO"
@@ -290,11 +277,7 @@
     {
       "name": "Early Decision-Making Algorithm",
       "summary": "Forecasting final permeation outcomes from partial IVPT trajectories.",
-      "highlights": [
-        "Uncertainty quantification",
-        "Probability of exceedance",
-        "Experimental resource saving"
-      ],
+      "highlights": ["Uncertainty quantification", "Probability of exceedance", "Experimental resource saving"],
       "startDate": "2023",
       "endDate": "2025",
       "url": "https://github.com/yurbro/Yu-Zhang-PhD/tree/main/EDMA"
@@ -302,11 +285,7 @@
     {
       "name": "Domain-Constrained Symbolic Regression",
       "summary": "Interpretable dynamic modelling and optimisation of dermal drug release.",
-      "highlights": [
-        "Domain constraints",
-        "Dynamic modelling",
-        "Interpretable optimisation"
-      ],
+      "highlights": ["Domain constraints", "Dynamic modelling", "Interpretable optimisation"],
       "startDate": "2025",
       "endDate": "",
       "url": "https://github.com/yurbro/Yu-Zhang-PhD/tree/main/DKC-SR"
@@ -314,11 +293,7 @@
     {
       "name": "SkinMiner",
       "summary": "LLM-powered extraction and verification of dermal formulation evidence. SSRN preprint available; under review at International Journal of Pharmaceutics.",
-      "highlights": [
-        "Scientific LLMs",
-        "Evidence provenance",
-        "Structured datasets"
-      ],
+      "highlights": ["Scientific LLMs", "Evidence provenance", "Structured datasets"],
       "startDate": "2026",
       "endDate": "",
       "url": "https://github.com/yurbro/skinminer"
@@ -326,11 +301,7 @@
     {
       "name": "Clinical Machine Learning for Assisted Reproduction",
       "summary": "Ongoing research on reproducible outcome-modelling workflows for real-world IVF data.",
-      "highlights": [
-        "Outcome definition and feature construction",
-        "Patient-aware and time-aware validation",
-        "Data provenance and reproducibility"
-      ],
+      "highlights": ["Outcome definition and feature construction", "Patient-aware and time-aware validation", "Data provenance and reproducibility"],
       "startDate": "2026-06",
       "endDate": "",
       "url": "https://yurbro.github.io/projects/clinical-machine-learning/"
@@ -381,14 +352,7 @@
       "name": "Optimisation and Decision-Making",
       "level": "Research",
       "icon": "fa-solid fa-route",
-      "keywords": [
-        "Bayesian optimisation",
-        "Active learning",
-        "Uncertainty quantification",
-        "Temporal prediction",
-        "NSGA-II",
-        "Symbolic regression"
-      ]
+      "keywords": ["Bayesian optimisation", "Active learning", "Uncertainty quantification", "Temporal prediction", "NSGA-II", "Symbolic regression"]
     },
     {
       "name": "Clinical Data and Validation",
@@ -406,25 +370,13 @@
       "name": "Formulation and Experiments",
       "level": "Research",
       "icon": "fa-solid fa-flask-vial",
-      "keywords": [
-        "Dermal drug delivery",
-        "IVRT",
-        "IVPT",
-        "Formulation design",
-        "Digital twins",
-        "Automated experimentation"
-      ]
+      "keywords": ["Dermal drug delivery", "IVRT", "IVPT", "Formulation design", "Digital twins", "Automated experimentation"]
     },
     {
       "name": "LLMs and Scientific Evidence",
       "level": "Research",
       "icon": "fa-solid fa-book",
-      "keywords": [
-        "Multimodal and agentic data mining",
-        "Evidence extraction",
-        "Scientific workflow automation",
-        "Evidence provenance"
-      ]
+      "keywords": ["Multimodal and agentic data mining", "Evidence extraction", "Scientific workflow automation", "Evidence provenance"]
     },
     {
       "name": "Scientific Computing",
