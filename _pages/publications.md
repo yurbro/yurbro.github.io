@@ -2,29 +2,21 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Peer-reviewed work in AI-enabled formulation design, experimental decision-making and industrial process intelligence.
+description: Published and accepted research, with preprints listed separately.
 nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md -->
-
-<!-- Bibsearch Feature -->
-
 {% include bib_search.liquid %}
 
 <div class="publications">
-
-{% bibliography %}
-
+  {% bibliography %}
 </div>
 
 ## Preprints & manuscripts under review
 
-Preprints and manuscripts under review are listed separately and are not included in the homepage's peer-reviewed paper count.
+Preprints and manuscripts under review are shown separately from published and accepted papers.
 
 <div class="publications">
-
-{% bibliography --file preprints --group_by none %}
-
+  {% bibliography --file preprints --group_by none %}
 </div>
