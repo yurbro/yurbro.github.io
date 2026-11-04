@@ -97,6 +97,36 @@
         "ENG2128 Engineering Systems and Management",
         "ENG1080 Science Principles for Engineers",
         "CHEM042 Advanced Pharmaceutical Formulations (2025–26 and 2026–27) — teaching support in formulation science, pharmaceutical product design and advanced delivery systems."
+      ],
+      "teachingCourses": [
+        {
+          "code": "ENG2128",
+          "title": "Engineering Systems and Management",
+          "years": "2024–25",
+          "lecturer": {
+            "name": "Dr Lei Xing",
+            "url": "https://www.surrey.ac.uk/people/lei-xing"
+          }
+        },
+        {
+          "code": "ENG1080",
+          "title": "Science Principles for Engineers",
+          "years": "2025–26",
+          "lecturer": {
+            "name": "Prof. Madeleine Bussemaker",
+            "url": "https://www.surrey.ac.uk/people/madeleine-bussemaker"
+          }
+        },
+        {
+          "code": "CHEM042",
+          "title": "Advanced Pharmaceutical Formulations",
+          "years": "2025–26 and 2026–27",
+          "description": "Teaching support in formulation science, pharmaceutical product design and advanced delivery systems.",
+          "lecturer": {
+            "name": "Prof. Tao Chen",
+            "url": "https://www.surrey.ac.uk/people/tao-chen"
+          }
+        }
       ]
     },
     {

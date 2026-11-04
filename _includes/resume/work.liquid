@@ -37,7 +37,26 @@
             {% endif %}
             <p class="resume-work-summary">{{ summary_html }}</p>
           {% endif %}
-          {% if content.highlights %}
+          {% if content.teachingCourses and content.teachingCourses.size > 0 %}
+            <ul class="items resume-work-highlights">
+              {% for course in content.teachingCourses %}
+                <li>
+                  <span class="item">
+                    {{ course.code | escape }}
+                    {{ course.title | escape }}
+                    {% if course.years %}({{ course.years | escape }}){% endif %}
+                    {% if course.description %} — {{ course.description | escape }}{% endif %}
+                    {% if course.lecturer %}
+                      <span class="resume-teaching-lecturer">
+                        · Lecturer:
+                        <a href="{{ course.lecturer.url | escape }}" target="_blank" rel="noopener noreferrer">{{ course.lecturer.name | escape }}</a>
+                      </span>
+                    {% endif %}
+                  </span>
+                </li>
+              {% endfor %}
+            </ul>
+          {% elsif content.highlights %}
             <ul class="items resume-work-highlights">
               {% for item in content.highlights %}
                 <li>
