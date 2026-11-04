@@ -50,6 +50,20 @@
     <!-- Footer -->
     {% include footer.liquid %}
 
+    <!-- Track loads across the site; the visitors page already loads the map widget. -->
+    {% unless page.url == '/visitors/' or page.permalink == '/visitors/' %}
+      <img
+        src="https://mapmyvisitors.com/map.png?d=-sm6w_a1PM33DsMrtfDz9TfNp4I9HXXcsItpzWPES6k&cl=ffffff"
+        alt=""
+        width="1"
+        height="1"
+        loading="eager"
+        decoding="async"
+        aria-hidden="true"
+        style="position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none"
+      >
+    {% endunless %}
+
     <!-- JavaScripts -->
     {% include scripts.liquid %}
   </body>
