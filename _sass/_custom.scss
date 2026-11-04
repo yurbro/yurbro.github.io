@@ -1202,3 +1202,46 @@ html[data-theme="dark"] .profile picture img {
   line-height: 1.7;
   margin: 0;
 }
+ 
+/* Linked academic mentors and concise master's research highlights in the CV. */
+.cv .resume-education-people,
+.cv .resume-education-research,
+.cv .resume-education-publications {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0.45rem;
+  margin-top: 0.3rem;
+}
+
+.cv .resume-education-highlights {
+  margin-bottom: 0.55rem;
+  margin-top: 0.25rem;
+}
+
+.cv .resume-education-people a,
+.cv .resume-education-publications a,
+.cv .resume-work-summary a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* A quiet invitation between the About text and the news list. */
+.homepage-contact-invite {
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+  margin-top: 1.2rem;
+}
+
+.homepage-contact-invite a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--global-divider-color);
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: var(--global-theme-color);
+  }
+}
