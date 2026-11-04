@@ -1148,3 +1148,34 @@ html[data-theme="dark"] .profile picture img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Beyond the Lab: understated personal photo journal. */
+.beyond-photo {
+  margin: 1.1rem 0 2.2rem;
+  max-width: 100%;
+}
+
+.beyond-photo a {
+  display: block;
+}
+
+.beyond-photo img {
+  display: block;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.beyond-photo figcaption {
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin-top: 0.55rem;
+}
+
+@media (max-width: 575px) {
+  .beyond-photo img {
+    max-height: none;
+  }
+}
