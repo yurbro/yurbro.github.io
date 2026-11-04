@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/activities/";
           },
+        },{id: "nav-beyond-the-lab",
+          title: "Beyond the Lab",
+          description: "Places, interests and everyday moments beyond research.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/beyond/";
+          },
         },{id: "nav-cv",
           title: "cv",
           description: "Research experience, education, selected outputs and technical expertise.",
