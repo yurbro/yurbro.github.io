@@ -14,9 +14,9 @@ Life is more than experiments, algorithms and papers. This is a small collection
 Exploring new places offers a different perspective beyond research. I have begun this photo journal with a view of Prague from my 2026 visit to the Czech Republic.
 
 <figure class="beyond-photo beyond-photo-featured">
-  <a href="{{ '/assets/img/activities/chisa-2026-09-prague.jpg' | relative_url }}" target="_blank" rel="noopener noreferrer">
+  <a href="/assets/img/activities/chisa-2026-09-prague.jpg" target="_blank" rel="noopener noreferrer">
     <img
-      src="{{ '/assets/img/activities/chisa-2026-09-prague.jpg' | relative_url }}"
+      src="/assets/img/activities/chisa-2026-09-prague.jpg"
       alt="A city view of Prague photographed during my 2026 visit"
       loading="lazy"
     >
