@@ -40,6 +40,43 @@
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.institution }}</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.area }}</h6>
+          {% if content.supervisors and content.supervisors.size > 0 %}
+            <p class="resume-education-people ml-1 ml-md-4">
+              <strong>{% if content.supervisors.size > 1 %}Supervisors{% else %}Supervisor{% endif %}:</strong>
+              {% for person in content.supervisors %}
+                <a href="{{ person.url | escape }}" target="_blank" rel="noopener noreferrer">{{ person.name | escape }}</a>
+                {% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </p>
+          {% endif %}
+          {% if content.academicContacts and content.academicContacts.size > 0 %}
+            <p class="resume-education-people ml-1 ml-md-4">
+              {% for person in content.academicContacts %}
+                {{ person.label | escape }}:
+                <a href="{{ person.url | escape }}" target="_blank" rel="noopener noreferrer">{{ person.name | escape }}</a>
+                {% unless forloop.last %} · {% endunless %}
+              {% endfor %}
+            </p>
+          {% endif %}
+          {% if content.researchFocus %}
+            <p class="resume-education-research ml-1 ml-md-4"><strong>Research focus:</strong> {{ content.researchFocus | escape }}</p>
+          {% endif %}
+          {% if content.researchHighlights and content.researchHighlights.size > 0 %}
+            <ul class="items resume-education-highlights">
+              {% for highlight in content.researchHighlights %}
+                <li><span class="item">{{ highlight | escape }}</span></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          {% if content.relatedPublications and content.relatedPublications.size > 0 %}
+            <p class="resume-education-publications ml-1 ml-md-4">
+              <strong>Related publications:</strong>
+              {% for publication in content.relatedPublications %}
+                <a href="{{ publication.url | escape }}" target="_blank" rel="noopener noreferrer">{{ publication.name | escape }}</a>
+                {% unless forloop.last %} · {% endunless %}
+              {% endfor %}
+            </p>
+          {% endif %}
           <ul class="items">
             {% for item in content.courses %}
               <li>
