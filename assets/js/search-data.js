@@ -31,7 +31,7 @@ ninja.data = [{
             window.location.href = "/activities/";
           },
         },{id: "nav-beyond-the-lab",
-          title: "Beyond the Lab",
+          title: "beyond the lab",
           description: "Places, interests and everyday moments beyond research.",
           section: "Navigation",
           handler: () => {
