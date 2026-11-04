@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Beyond the Lab
+title: beyond the lab
 permalink: /beyond/
 description: Places, interests and everyday moments beyond research.
 nav: true
