@@ -310,18 +310,31 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .profile {
-    max-width: 320px;
-    margin: 0 auto 1.5rem auto;
+@media (max-width: 575px) {
+  .profile,
+  .profile.float-right,
+  .profile.float-left {
+    float: none !important;
+    max-width: none;
+    margin: 0 0 1.5rem;
+    width: 100%;
+  }
+
+  .profile figure,
+  .profile picture {
+    display: block;
+    margin: 0;
+    width: 100%;
   }
 
   .profile img,
   .profile picture img {
-    width: 100%;
+    aspect-ratio: 4 / 5;
+    display: block;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center top;
+    width: 100%;
   }
 }
 
@@ -526,11 +539,6 @@ body {
 }
 
 @media (max-width: 575px) {
-  .profile img {
-    aspect-ratio: 16 / 10;
-    object-position: 54% 54%;
-  }
-
   .hero-actions .btn {
     text-align: center;
     width: 100%;
@@ -918,8 +926,10 @@ body {
 
 .profile {
   img {
-    border-color: var(--yu-card-border);
+    border: 0;
+    border-radius: 0 !important;
     box-shadow: none !important;
+    mix-blend-mode: multiply;
   }
 
   .more-info {
@@ -927,6 +937,14 @@ body {
     font-size: 0.76rem;
     line-height: 1.55;
   }
+}
+
+/* Keep the same monochrome portrait readable in either website theme.
+   White pixels blend away in light mode; inverted black pixels blend away in dark mode.
+   The source image is unchanged and the effect is scoped to the homepage profile. */
+html[data-theme="dark"] .profile picture img {
+  filter: invert(1);
+  mix-blend-mode: screen;
 }
 
 .news {
