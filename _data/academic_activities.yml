@@ -61,6 +61,23 @@
       alt: Speaker delivering a conference presentation at ABCP 2025.
       caption: Academic session at ABCP 2025.
 
+- title: "School of Chemistry and Chemical Engineering PGR Festival of Research Day"
+  year: "2025"
+  when: "2 July 2025"
+  location: "University of Surrey, Guildford, UK"
+  role: "Poster presentation"
+  detail: "Presented the poster 'Accelerating skin product formulation design: An early decision-making algorithm for optimisation', outlining a GPR- and probability-of-exceedance-based method for early experimental decision-making in dermal formulation development."
+  photos:
+    - src: /assets/img/activities/pgr-festival-2025-01-poster.jpg
+      alt: "Poster on an early decision-making algorithm for skin product formulation optimisation displayed at the PGR Festival of Research Day."
+      caption: "Research poster at the PGR Festival of Research Day."
+    - src: /assets/img/activities/pgr-festival-2025-02-presentation.jpg
+      alt: "Yu Zhang standing beside the research poster at the University of Surrey PGR Festival of Research Day."
+      caption: "Presenting my poster at the festival."
+    - src: /assets/img/activities/pgr-festival-2025-03-discussion.jpg
+      alt: "Conference participants discussing the research poster during the PGR Festival of Research Day."
+      caption: "Poster discussion with other researchers."
+
 - title: "University of Surrey Postgraduate and Early Career Researcher Conference"
   year: "2025"
   when: "30 April – 1 May 2025"

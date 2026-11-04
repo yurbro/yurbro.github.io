@@ -32,6 +32,29 @@ Research presentations, conference participation, scholarly service and a photo 
   {% endfor %}
 </div>
 
+## Research visits
+
+<div class="activity-list">
+  {% for visit in site.data.research_visits %}
+    <section class="activity-entry" id="research-visit-{{ visit.year }}-{{ forloop.index }}">
+      <div class="activity-date">{{ visit.when }}</div>
+      <div class="activity-body">
+        <span class="activity-role">{{ visit.role }}</span>
+        <h3>{{ visit.title }}</h3>
+        <p class="activity-place"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> {{ visit.location }}</p>
+        <p>{{ visit.detail }}</p>
+        {% if visit.photos.size > 0 %}
+          <div class="activity-gallery">
+            {% for photo in visit.photos %}
+              {% include activities/photo.liquid photo=photo %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </section>
+  {% endfor %}
+</div>
+
 ## Academic service
 
 ### Journal peer review
