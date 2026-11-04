@@ -16,43 +16,20 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch aggregate statistics
+      - name: Fetch recorded widget loads
         env:
           MAPMYVISITORS_ENDPOINT: https://mapmyvisitors.com/ajax/orange_dots?id=2249417&last_hit_id=0&max_hit_id=0&max_visit_count=1
-          MAPMYVISITORS_MAP_ENDPOINT: https://mapmyvisitors.com/ajax/map?last_hit_id=0&initial_hit_id=0&initial=true&animate=false&user=0&url=%22https%3A%2F%2Fyurbro.github.io%2F%22&id=2249417&globalTotal=false&mapType=widget&callback=stats
         run: |
           set -euo pipefail
           curl --fail --silent --show-error --retry 3 --max-time 30 \
-            "$MAPMYVISITORS_MAP_ENDPOINT" -o /tmp/mapmyvisitors-map.jsonp
-          curl --fail --silent --show-error --retry 3 --max-time 30 \
             "$MAPMYVISITORS_ENDPOINT" -o /tmp/mapmyvisitors.json
 
-          total="$(jq -r '.visits_count | tonumber' /tmp/mapmyvisitors.json)"
-          export TODAY_DATE="$(date -u +'%Y-%m-%d')"
-          today="$(python3 - <<'PY'
-          import json
-          import os
-          import re
-          from pathlib import Path
-
-          raw = Path("/tmp/mapmyvisitors-map.jsonp").read_text().strip()
-          if not raw.startswith("stats(") or not raw.endswith(")"):
-              raise ValueError("Unexpected MapMyVisitors JSONP response")
-
-          script = json.loads(raw[6:-1])
-          visits = re.findall(
-              r'_map\.addRealtimeVisitors\([^,]+,\s*"[^"]*",\s*"[^"]*",\s*"(\d{4}-\d{2}-\d{2}) [^"]*",\s*"(\d+)"',
-              script,
-          )
-          print(sum(int(count) for date, count in visits if date == os.environ["TODAY_DATE"]))
-          PY
-          )"
+          total="$(jq -er '.visits_count | tonumber | if . >= 0 and floor == . then . else error("Invalid visit count") end' /tmp/mapmyvisitors.json)"
 
           jq -n \
-            --argjson today "$today" \
             --argjson total "$total" \
             --arg updated_at "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" \
-            '{today_visits: $today, total_visits: $total, updated_at: $updated_at, aggregation_timezone: "UTC", source: "MapMyVisitors"}' \
+            '{total_visits: $total, updated_at: $updated_at, source: "MapMyVisitors", metric: "recorded_widget_loads"}' \
             > /tmp/visitor-stats.json
 
       - name: Check out statistics branch
@@ -62,17 +39,30 @@ jobs:
           path: visitor-data
           fetch-depth: 1
 
-      - name: Publish aggregate statistics
+      - name: Validate and publish aggregate statistics
         run: |
           set -euo pipefail
 
-          if jq -e \
-            --argjson today "$(jq '.today_visits' /tmp/visitor-stats.json)" \
-            --argjson total "$(jq '.total_visits' /tmp/visitor-stats.json)" \
-            '.today_visits == $today and .total_visits == $total' \
-            visitor-data/visitor-stats.json > /dev/null; then
-            echo "Visitor totals have not changed."
-            exit 0
+          current_total="$(jq -r '.total_visits | tonumber' /tmp/visitor-stats.json)"
+          previous_total="$(jq -r '.total_visits | tonumber' visitor-data/visitor-stats.json)"
+
+          if (( current_total < previous_total )); then
+            echo "::error::MapMyVisitors returned a lower cumulative count. Refusing to publish a potentially incomplete counter."
+            exit 1
+          fi
+
+          # Refresh the snapshot timestamp at least every 6 hours even if the count is unchanged.
+          # This avoids an indefinitely stale timestamp without committing hourly.
+          if (( current_total == previous_total )); then
+            last_updated="$(jq -r '.updated_at // ""' visitor-data/visitor-stats.json)"
+            previous_epoch="$(date -u -d "$last_updated" +%s 2>/dev/null || echo 0)"
+            now_epoch="$(date -u +%s)"
+            age_seconds="$((now_epoch - previous_epoch))"
+
+            if (( age_seconds >= 0 && age_seconds < 21600 )); then
+              echo "Count unchanged; a successful snapshot was published within 6 hours."
+              exit 0
+            fi
           fi
 
           cp /tmp/visitor-stats.json visitor-data/visitor-stats.json
@@ -80,5 +70,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add visitor-stats.json
-          git commit -m "Update aggregate visitor statistics"
+          git commit -m "Update recorded visitor widget loads"
           git push origin HEAD:visitor-stats
