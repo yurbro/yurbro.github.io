@@ -1,5 +1,5 @@
 {% capture footer_contents %}
-  <span>&copy; {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}</span>
+  <span class="footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}</span>
   {% if site.impressum_path %}
     <span class="footer-separator" aria-hidden="true">·</span>
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>
