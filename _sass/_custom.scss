@@ -1251,3 +1251,54 @@ html[data-theme="dark"] .profile picture img {
     color: var(--global-theme-color);
   }
 }
+
+/* Footer copyright: keep explicit contrast on both site themes. */
+footer.fixed-bottom .footer-copyright,
+footer.sticky-bottom .footer-copyright {
+  color: var(--global-footer-text-color);
+  opacity: 1;
+}
+
+/* Keep the homepage social links understated and comfortably clickable. */
+.social .contact-icons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  gap: 0.8rem;
+  justify-content: center;
+  margin: 0.9rem 0 1.1rem;
+}
+
+.social .contact-icons a {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  min-height: 2.6rem;
+  min-width: 2.2rem;
+}
+
+.social .contact-icons a img {
+  height: 2rem;
+  margin-bottom: 0;
+  width: 2rem;
+}
+
+.social .contact-icons a svg {
+  height: 2rem;
+  margin-bottom: 0;
+  width: 2rem;
+}
+
+.social .contact-icons a svg image {
+  height: 2rem;
+  width: 2rem;
+}
+
+@media (max-width: 575px) {
+  .social .contact-icons {
+    font-size: 1.75rem;
+    gap: 0.55rem;
+  }
+}
