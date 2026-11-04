@@ -427,6 +427,12 @@ body {
   }
 }
 
+.visitor-metric strong[data-visitor-updated] {
+  font-size: 1rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
 .visitor-metric-icon {
   color: var(--yu-teal);
   font-size: 0.9rem;
