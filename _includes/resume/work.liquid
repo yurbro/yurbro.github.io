@@ -28,7 +28,14 @@
           {% endif %}
           <h6 class="resume-work-institution">{{ content.name }}</h6>
           {% if content.summary %}
-            <p class="resume-work-summary">{{ content.summary }}</p>
+            {% assign summary_html = content.summary | escape %}
+            {% if content.summaryPeople and content.summaryPeople.size > 0 %}
+              {% for person in content.summaryPeople %}
+                {% capture person_link %}<a href="{{ person.url | escape }}" target="_blank" rel="noopener noreferrer">{{ person.name | escape }}</a>{% endcapture %}
+                {% assign summary_html = summary_html | replace: person.name, person_link %}
+              {% endfor %}
+            {% endif %}
+            <p class="resume-work-summary">{{ summary_html }}</p>
           {% endif %}
           {% if content.highlights %}
             <ul class="items resume-work-highlights">
