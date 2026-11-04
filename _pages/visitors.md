@@ -15,8 +15,8 @@ nav: false
     <div>
       <div class="visitor-kicker">Academic reach</div>
       <p>
-        A lightweight view of this site's readership since visitor tracking was enabled on 23 August 2026. Locations are approximate and
-        shown only as an aggregate map.
+        A lightweight view of recorded map-widget loads and approximate visitor locations. Earlier tracking covered this page only;
+        site-wide tracking began with the updated tracker, so historical visits to other pages cannot be reconstructed.
       </p>
     </div>
   </div>
@@ -25,19 +25,25 @@ nav: false
     <div class="visitor-metric">
       <span class="visitor-metric-icon" aria-hidden="true"><i class="fa-solid fa-chart-simple"></i></span>
       <strong data-visitor-total>—</strong>
-      <span>Total visits</span>
+      <span>Tracked widget loads</span>
     </div>
     <div class="visitor-metric">
-      <span class="visitor-metric-icon" aria-hidden="true"><i class="fa-regular fa-calendar"></i></span>
-      <strong data-visitor-today>—</strong>
-      <span>Visits today (UTC)</span>
+      <span class="visitor-metric-icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></span>
+      <strong data-visitor-updated>—</strong>
+      <span>Last sync (UTC)</span>
     </div>
     <a class="visitor-metric visitor-metric-link" href="https://mapmyvisitors.com/web/1c7nt">
       <span class="visitor-metric-icon" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-      <strong>Live</strong>
+      <strong>Source</strong>
       <span>Detailed statistics</span>
     </a>
   </div>
+
+  <p class="visitor-privacy-note">
+    Counts represent requests recorded by MapMyVisitors, not unique individuals or guaranteed page views. Browser blocking, caching and
+    automated traffic may affect the totals.
+  </p>
+  <p class="visitor-privacy-note" data-visitor-warning hidden></p>
 
   <div class="visitor-map-card">
     <div class="visitor-map-heading">
@@ -45,7 +51,7 @@ nav: false
         <div class="visitor-kicker">Worldwide readership</div>
         <h2>Visitor map</h2>
       </div>
-      <span class="visitor-map-status"><i class="fa-solid fa-rotate"></i> Updated hourly</span>
+      <span class="visitor-map-status"><i class="fa-solid fa-rotate"></i> Map updates when viewed</span>
     </div>
 
     <div class="visitor-map-shell">
@@ -68,8 +74,8 @@ nav: false
 
   <p class="visitor-privacy-note">
     <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-    This page mirrors aggregate visit totals only. The map is rendered by MapMyVisitors; no IP addresses or individual browsing histories
-    are published here.
+    The map is rendered by MapMyVisitors using approximate IP-based location data. This page publishes aggregate statistics, not
+    individual IP addresses or browsing histories.
   </p>
 </div>
 
