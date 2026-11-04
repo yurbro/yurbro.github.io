@@ -7,7 +7,10 @@ nav: true
 nav_order: 5
 ---
 
-Life is more than experiments, algorithms and papers. This is a small collection of places, interests and everyday moments beyond my academic work.
+<div class="beyond-intro">
+  <p class="beyond-intro-quote">Life is more than experiments, algorithms and papers.</p>
+  <p class="beyond-intro-description">This is a small collection of places, interests and everyday moments beyond my academic work.</p>
+</div>
 
 ## Places & Journeys
 

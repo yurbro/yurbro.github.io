@@ -1179,3 +1179,26 @@ html[data-theme="dark"] .profile picture img {
     max-height: none;
   }
 }
+
+/* Beyond the Lab: expressive introductory quote, without changing site typography. */
+.beyond-intro {
+  margin: 0.4rem 0 2rem;
+}
+
+.beyond-intro-quote {
+  color: var(--global-text-color);
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  font-size: clamp(1.5rem, 3.3vw, 2.25rem);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.35;
+  margin: 0 0 0.8rem;
+}
+
+.beyond-intro-description {
+  color: var(--global-text-color-light);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin: 0;
+}
