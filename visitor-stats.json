@@ -1,7 +1,6 @@
 {
-  "today_visits": 1,
-  "total_visits": 4,
-  "updated_at": "2026-11-04T06:36:56Z",
-  "aggregation_timezone": "UTC",
-  "source": "MapMyVisitors"
+  "total_visits": 16,
+  "updated_at": "2026-11-04T21:56:20Z",
+  "source": "MapMyVisitors",
+  "metric": "recorded_widget_loads"
 }
