@@ -929,6 +929,7 @@ body {
     border: 0;
     border-radius: 0 !important;
     box-shadow: none !important;
+    mix-blend-mode: multiply;
   }
 
   .more-info {
@@ -936,6 +937,14 @@ body {
     font-size: 0.76rem;
     line-height: 1.55;
   }
+}
+
+/* Keep the same monochrome portrait readable in either website theme.
+   White pixels blend away in light mode; inverted black pixels blend away in dark mode.
+   The source image is unchanged and the effect is scoped to the homepage profile. */
+html[data-theme="dark"] .profile picture img {
+  filter: invert(1);
+  mix-blend-mode: screen;
 }
 
 .news {
