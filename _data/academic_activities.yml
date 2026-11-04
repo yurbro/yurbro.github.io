@@ -42,9 +42,24 @@
   role: "Conference volunteer"
   detail: "Served as a conference volunteer at the ABCP 2025 Annual Conference held at the University of Surrey."
   photos:
-    - src: /assets/img/activities/abcp-2025-01-volunteer.jpg
-      alt: "Yu Zhang receiving a volunteer appreciation certificate at ABCP 2025."
-      caption: "Volunteer appreciation at ABCP 2025, University of Surrey."
+  - src: /assets/img/activities/abcp-2025-01-volunteer.jpg
+    alt: Yu Zhang and fellow volunteers receiving appreciation certificates at ABCP 2025.
+    caption: Volunteer appreciation at ABCP 2025, University of Surrey.
+  - src: /assets/img/activities/abcp-2025-02-group.jpg
+    alt: Conference organisers, volunteers and participants in a group photograph at ABCP 2025.
+    caption: Group photograph at ABCP 2025.
+  - src: /assets/img/activities/abcp-2025-03-certificate.jpg
+    alt: Yu Zhang’s volunteer appreciation certificate for the ABCP 2025 Annual Conference.
+    caption: Volunteer appreciation certificate, dated 12 September 2025.
+  - src: /assets/img/activities/abcp-2025-04-dinner.jpg
+    alt: Yu Zhang with other participants at a social gathering during ABCP 2025.
+    caption: Conference networking and social gathering.
+  - src: /assets/img/activities/abcp-2025-05-opening.jpg
+    alt: Opening ceremony presentation at ABCP 2025, University of Surrey.
+    caption: Opening ceremony at ABCP 2025.
+  - src: /assets/img/activities/abcp-2025-06-session.jpg
+    alt: Speaker delivering a conference presentation at ABCP 2025.
+    caption: Academic session at ABCP 2025.
 
 - title: "University of Surrey Postgraduate and Early Career Researcher Conference"
   year: "2025"
