@@ -43,3 +43,5 @@ During a **Visiting PhD Researcher** placement at [Jagiellonian University Medic
 Previously, I earned an **MEng in Control Science and Engineering** from China University of Petroleum–Beijing and a **BEng in Automation** from Panzhihua University. I also completed a research placement at West China Hospital, Sichuan University (2025).
 
 My research and academic service include an [oral presentation at CHISA 2026 and peer-review contributions](/activities/). For a fuller record of positions, teaching, awards and scholarly service, see my [academic CV](/cv/).
+
+<p class="homepage-contact-invite">Feel free to <a href="mailto:yu.zhang@surrey.ac.uk">reach out</a> if you'd like to discuss research, exchange ideas, or simply say hello :)</p>
