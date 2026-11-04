@@ -310,6 +310,21 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .profile {
+    max-width: 320px;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .profile img,
+  .profile picture img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+  }
+}
+
 /* Aggregate visitor statistics */
 .footer-separator {
   margin: 0 0.3rem;
