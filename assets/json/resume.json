@@ -38,6 +38,12 @@
       "startDate": "2026-09",
       "endDate": "",
       "summary": "Work with Dr Kai Yang on an EPSRC IAA project in battery intelligence, contributing data processing, algorithm development and research software workflows.",
+      "summaryPeople": [
+        {
+          "name": "Dr Kai Yang",
+          "url": "https://www.surrey.ac.uk/people/kai-yang"
+        }
+      ],
       "highlights": [
         "Process and organise experimental datasets for computational analysis.",
         "Contribute to algorithm development and data-driven research workflows.",
@@ -52,6 +58,12 @@
       "startDate": "2026-06",
       "endDate": "",
       "summary": "Work with Dr Xilu Wang on reproducible machine-learning workflows for real-world clinical data in assisted reproduction and IVF.",
+      "summaryPeople": [
+        {
+          "name": "Dr Xilu Wang",
+          "url": "https://www.surrey.ac.uk/people/xilu-wang"
+        }
+      ],
       "highlights": [
         "Define clinically meaningful outcomes and construct analysis-ready features from heterogeneous, longitudinal treatment records.",
         "Address incomplete records and outcome availability when preparing data for patient-level outcome modelling.",
@@ -134,11 +146,17 @@
       "studyType": "PhD",
       "startDate": "2023-09",
       "endDate": "",
-      "courses": [
-        "Expected thesis submission: late 2026 / early 2027.",
-        "Digital twin and AI methods for topical formulation design",
-        "Supervisors: Professor Tao Chen and Assoc. Prof. Dimitrios Tsaoulidis"
-      ]
+      "supervisors": [
+        {
+          "name": "Prof. Tao Chen",
+          "url": "https://www.surrey.ac.uk/people/tao-chen"
+        },
+        {
+          "name": "Assoc. Prof. Dimitrios Tsaoulidis",
+          "url": "https://www.surrey.ac.uk/people/dimitrios-tsaoulidis"
+        }
+      ],
+      "courses": ["Expected thesis submission: late 2026 / early 2027.", "Digital twin and AI methods for topical formulation design"]
     },
     {
       "institution": "China University of Petroleum - Beijing",
@@ -148,7 +166,29 @@
       "studyType": "MEng",
       "startDate": "2020-09",
       "endDate": "2023-07",
-      "courses": ["System identification", "Optimal estimation", "Nonlinear systems", "Chemical process dynamics"]
+      "supervisors": [
+        {
+          "name": "Prof. Xiaoyong Gao",
+          "url": "https://www.cup.edu.cn/cupai/szdw/jsml/dde49f7b3222468bb1538165088f7535.htm"
+        }
+      ],
+      "researchFocus": "Data-driven fault monitoring and diagnosis of electric submersible pumps under nonlinear dynamics and limited fault samples.",
+      "researchHighlights": [
+        "Developed LPP-enhanced dynamic kernel PCA for nonlinear process monitoring and fault identification.",
+        "Developed improved conditional GAN-based data augmentation for fault diagnosis using extremely limited samples.",
+        "Investigated optimisation-based semi-supervised learning for multi-class fault diagnosis using unlabeled industrial data."
+      ],
+      "relatedPublications": [
+        {
+          "name": "The Canadian Journal of Chemical Engineering (2023)",
+          "url": "https://doi.org/10.1002/cjce.24779"
+        },
+        {
+          "name": "Journal of the Franklin Institute (2024)",
+          "url": "https://doi.org/10.1016/j.jfranklin.2024.01.030"
+        }
+      ],
+      "courses": []
     },
     {
       "institution": "Panzhihua University",
@@ -168,9 +208,20 @@
       "studyType": "Visiting PhD Researcher",
       "startDate": "2026-06",
       "endDate": "2026-08",
+      "academicContacts": [
+        {
+          "label": "Host",
+          "name": "Prof. Barbara Wiśniowska",
+          "url": "https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM2060f0f314494b8d874f90774879cfba"
+        },
+        {
+          "label": "Collaborator",
+          "name": "Dr Laura Krumpholz",
+          "url": "https://portalwiedzy.cm-uj.krakow.pl/info/author/UJCM7ee164e3845b4644bcb8cd0505a2cd76/"
+        }
+      ],
       "courses": [
         "Research visit: 15 June – 14 August 2026; home PhD institution: University of Surrey.",
-        "Hosted by Prof. Barbara Wiśniowska; collaborated with Dr Laura Krumpholz.",
         "SkinPhysio-Extract: LLM-assisted extraction, provenance auditing and verification of quantitative skin physiology evidence."
       ]
     }
