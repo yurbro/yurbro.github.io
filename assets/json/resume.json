@@ -57,11 +57,15 @@
       "location": "Guildford, UK",
       "startDate": "2026-06",
       "endDate": "",
-      "summary": "Work with Dr Xilu Wang on reproducible machine-learning workflows for real-world clinical data in assisted reproduction and IVF.",
+      "summary": "Work with Dr Xilu Wang (University of Surrey) and Dr Mingkun Tan (University of Münster, Germany) on reproducible machine-learning workflows for real-world clinical data in assisted reproduction and IVF.",
       "summaryPeople": [
         {
           "name": "Dr Xilu Wang",
           "url": "https://www.surrey.ac.uk/people/xilu-wang"
+        },
+        {
+          "name": "Dr Mingkun Tan",
+          "url": "https://www.medizin.uni-muenster.de/reproductionms/reprotrackms/sperm-dysfunction-and-ciliopathies/next-generation-automated-sperm-analysis/mingkun-tan-phd.html"
         }
       ],
       "highlights": [

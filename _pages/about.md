@@ -28,7 +28,7 @@ I am a PhD researcher in **Chemical and Process Engineering** at the [University
 
 My research develops **AI-driven modelling, optimisation and digital-twin methods** for engineering and healthcare. I focus on data-efficient learning, interpretable models and scientific evidence extraction, with applications in dermal drug formulation and process systems.
 
-Alongside my PhD, I work on [clinical machine learning for IVF](/projects/clinical-machine-learning/) with [Dr Xilu Wang](https://www.surrey.ac.uk/people/xilu-wang) and [battery intelligence](/projects/battery-intelligence/) with [Dr Kai Yang](https://www.surrey.ac.uk/people/kai-yang) at Surrey.
+Alongside my PhD, I work on [clinical machine learning for IVF](/projects/clinical-machine-learning/) with [Dr Xilu Wang](https://www.surrey.ac.uk/people/xilu-wang) at Surrey and [Dr Mingkun Tan](https://www.medizin.uni-muenster.de/reproductionms/reprotrackms/sperm-dysfunction-and-ciliopathies/next-generation-automated-sperm-analysis/mingkun-tan-phd.html) at the University of Münster, Germany. I also work on [battery intelligence](/projects/battery-intelligence/) with [Dr Kai Yang](https://www.surrey.ac.uk/people/kai-yang) at Surrey.
 
 ## Research interests
 

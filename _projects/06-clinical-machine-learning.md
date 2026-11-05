@@ -9,7 +9,7 @@ importance: 6
 
 ## Real-world data in assisted reproduction
 
-Since June 2026, I have worked as a **Research Assistant at the University of Surrey with Dr Xilu Wang**, developing reproducible machine-learning workflows for large, heterogeneous clinical datasets in assisted reproduction and in vitro fertilisation (IVF).
+Since June 2026, I have worked as a **Research Assistant at the University of Surrey**, developing reproducible machine-learning workflows for large, heterogeneous clinical datasets in assisted reproduction and in vitro fertilisation (IVF). This research involves collaboration with [Dr Xilu Wang](https://www.surrey.ac.uk/people/xilu-wang) at Surrey and [Dr Mingkun Tan](https://www.medizin.uni-muenster.de/reproductionms/reprotrackms/sperm-dysfunction-and-ciliopathies/next-generation-automated-sperm-analysis/mingkun-tan-phd.html) at the University of Münster, Germany.
 
 This ongoing research focuses on making observational data suitable for reliable outcome modelling:
 
