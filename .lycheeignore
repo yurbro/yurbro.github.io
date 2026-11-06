@@ -3,3 +3,7 @@ reddit.com
 
 # SSRN blocks automated checks (403); public URL supplied in the author's SSRN posting email.
 ^https://papers\.ssrn\.com/sol3/papers\.cfm\?abstract_id=7620063$
+
+# Wiley SmartSys DOI resolves in the browser, but doi.org returns HTTP 403 to lychee's automation user agent (checked 6 Nov 2026).
+# Exact-match exclusion only; keep the DOI link public and check other links normally.
+^https://doi\.org/10\.1002/sys3\.70047$
