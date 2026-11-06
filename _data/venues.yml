@@ -1,27 +1,44 @@
+# Fallback palette by journal for future papers.
+# A publication's optional `badge_color={#RRGGBB}` in papers.bib or preprints.bib overrides this value.
+# For a NEW journal, add its `abbr` here once; otherwise the template uses a readable slate (#4D6578).
+# Colours intentionally use muted tones with white-text contrast >= 4.5:1.
+"Measurement":
+  color: "#2D588A"
+
+"SmartSys":
+  url: https://onlinelibrary.wiley.com/journal/30080003
+  color: "#366E68"
+
+"Pharm. Res.":
+  color: "#4E5C96"
+
 "CHERD":
   url: https://www.sciencedirect.com/journal/chemical-engineering-research-and-design
-  color: "#003f5c"
+  color: "#605C8C"
 
 "AID":
   url: https://advanced.onlinelibrary.wiley.com/journal/30075055
-  color: "#6a4c93"
+  color: "#3866A0"
 
 "RSC Pharm.":
   url: https://pubs.rsc.org/en/journals/journalissues/pm
-  color: "#00856a"
+  color: "#387A70"
 
 "CACE":
   url: https://www.sciencedirect.com/journal/computers-and-chemical-engineering
-  color: "#d65a31"
+  color: "#875B72"
 
 "JFI":
-  color: "#2f6690"
+  color: "#4E6A8A"
 
 "CJCE":
-  color: "#4f772d"
+  color: "#61784F"
 
 "IVC":
-  color: "#9b5de5"
+  color: "#635C8A"
 
 "CIE":
-  color: "#6c757d"
+  color: "#697483"
+
+"Preprint":
+  color: "#6C7085"
