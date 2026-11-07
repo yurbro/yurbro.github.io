@@ -1,7 +1,25 @@
 {% assign photo = include.photo %}
+{% assign photo_extension = photo.src | split: '.' | last | downcase %}
+{% assign photo_base = photo.src | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' %}
 <figure class="activity-photo">
   <a href="{{ photo.src | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="View photo: {{ photo.alt | escape }}">
-    <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy">
+    <picture>
+      {% if site.imagemagick.enabled and site.imagemagick.widths and photo_extension != 'webp' and photo_extension != 'gif' %}
+        <source
+          type="image/webp"
+          srcset="{% for width in site.imagemagick.widths %}{{ photo_base | relative_url }}-{{ width }}.webp {{ width }}w{% unless forloop.last %}, {% endunless %}{% endfor %}"
+          sizes="(min-width: 992px) 260px, (min-width: 576px) 36vw, 46vw"
+        >
+      {% endif %}
+      <img
+        src="{{ photo.src | relative_url }}"
+        alt="{{ photo.alt | escape }}"
+        width="400"
+        height="300"
+        loading="lazy"
+        decoding="async"
+      >
+    </picture>
   </a>
   {% if photo.caption %}
     <figcaption>{{ photo.caption }}</figcaption>
