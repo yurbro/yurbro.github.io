@@ -1303,12 +1303,11 @@ footer.sticky-bottom .footer-copyright {
   }
 }
 
-/* Publication labels: individual BibTeX colour > journal colour > slate fallback.
-   Keep white text legible in both light and dark modes. */
-.publications .abbr abbr.publication-venue-badge {
-  color: #ffffff !important;
-}
-
-.publications .abbr abbr.publication-venue-badge a {
+/* Publication labels: white text on accessible RGB backgrounds.
+   Match the full bibliography selector from _base.scss so the theme's
+   --global-card-bg-color cannot override unlinked venue names. */
+.publications ol.bibliography li .abbr abbr.publication-venue-badge,
+.publications ol.bibliography li .abbr abbr.publication-venue-badge a,
+.publications ol.bibliography li .abbr abbr.publication-venue-badge span {
   color: #ffffff !important;
 }
