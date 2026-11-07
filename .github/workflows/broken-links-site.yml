@@ -39,6 +39,17 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      # The CV PDF is generated only in Deploy site, not by a plain Jekyll build.
+      # Import the deployed PDF before checking local links to avoid a false 404.
+      - name: Include generated academic CV PDF in link checks
+        run: |
+          set -euo pipefail
+          if grep -q 'Yu_Zhang_Academic_CV.pdf' _site/cv/index.html; then
+            mkdir -p _site/assets/pdf
+            git fetch --no-tags --depth=1 origin gh-pages
+            git show FETCH_HEAD:assets/pdf/Yu_Zhang_Academic_CV.pdf > _site/assets/pdf/Yu_Zhang_Academic_CV.pdf
+            test -s _site/assets/pdf/Yu_Zhang_Academic_CV.pdf
+          fi
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v1.9.0
         with:
