@@ -18,11 +18,23 @@ Exploring new places offers a different perspective beyond research. I have begu
 
 <figure class="beyond-photo beyond-photo-featured">
   <a href="/assets/img/activities/chisa-2026-09-prague.jpg" target="_blank" rel="noopener noreferrer">
-    <img
-      src="/assets/img/activities/chisa-2026-09-prague.jpg"
-      alt="A city view of Prague photographed during my 2026 visit"
-      loading="lazy"
-    >
+    <picture>
+      {% if site.imagemagick.enabled %}
+        <source
+          type="image/webp"
+          srcset="{% for width in site.imagemagick.widths %}{{ '/assets/img/activities/chisa-2026-09-prague' | relative_url }}-{{ width }}.webp {{ width }}w{% unless forloop.last %}, {% endunless %}{% endfor %}"
+          sizes="(min-width: 1080px) 930px, 92vw"
+        >
+      {% endif %}
+      <img
+        src="{{ '/assets/img/activities/chisa-2026-09-prague.jpg' | relative_url }}"
+        alt="A city view of Prague photographed during my 2026 visit"
+        width="1152"
+        height="1536"
+        loading="lazy"
+        decoding="async"
+      >
+    </picture>
   </a>
   <figcaption>Prague, Czech Republic · 2026</figcaption>
 </figure>
