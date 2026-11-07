@@ -51,12 +51,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-started-a-uk-turing-scheme-research-placement-at-west-china-hospital-sichuan-university-extending-my-work-on-ai-enabled-healthcare-research",
+        },{id: "news-started-a-uk-turing-scheme-research-placement-at-west-china-hospital-sichuan-university-extending-my-work-on-ai-enabled-healthcare-research",
           title: 'Started a UK Turing Scheme research placement at West China Hospital, Sichuan University,...',
           description: "",
           section: "News",},{id: "news-our-early-decision-making-algorithm-for-accelerating-topical-formulation-experiments-is-now-available-in-computers-amp-amp-chemical-engineering-paper-code",
