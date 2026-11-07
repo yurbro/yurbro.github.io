@@ -196,6 +196,53 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Generate downloadable PDF from the existing CV page
+        run: |
+          set -euo pipefail
+          CHROME="$(command -v google-chrome || command -v chromium || command -v chromium-browser)"
+          test -n "$CHROME"
+          mkdir -p _site/assets/pdf
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory _site >/tmp/cv-pdf-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          python3 - <<'PY'
+          import time
+          import urllib.request
+
+          for attempt in range(40):
+              try:
+                  with urllib.request.urlopen("http://127.0.0.1:8765/cv/", timeout=2) as response:
+                      assert response.status == 200
+                      break
+              except Exception:
+                  time.sleep(0.25)
+          else:
+              raise RuntimeError("CV preview server was unavailable")
+          PY
+          "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage \
+            --no-pdf-header-footer --virtual-time-budget=8000 \
+            --print-to-pdf="$PWD/_site/assets/pdf/Yu_Zhang_Academic_CV.pdf" \
+            "http://127.0.0.1:8765/cv/"
+          python3 - <<'PY'
+          from pathlib import Path
+
+          cv_pdf = Path("_site/assets/pdf/Yu_Zhang_Academic_CV.pdf")
+          content = cv_pdf.read_bytes()
+          assert len(content) > 10_000, ("PDF unexpectedly small", len(content))
+          assert content.startswith(b"%PDF-"), "Invalid PDF header"
+          assert b"%%EOF" in content[-2048:], "Incomplete PDF"
+          print("CV PDF generated:", cv_pdf, len(content), "bytes")
+          PY
+          if command -v pdftotext >/dev/null 2>&1; then
+            pdftotext _site/assets/pdf/Yu_Zhang_Academic_CV.pdf /tmp/yu-cv-text.txt
+            grep -qi 'University of Surrey' /tmp/yu-cv-text.txt
+            grep -qi 'Research Fellow' /tmp/yu-cv-text.txt
+          fi
+      - name: Verify CV download link
+        run: |
+          set -euo pipefail
+          grep -q '/assets/pdf/Yu_Zhang_Academic_CV.pdf' _site/cv/index.html
+          test -s _site/assets/pdf/Yu_Zhang_Academic_CV.pdf
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
