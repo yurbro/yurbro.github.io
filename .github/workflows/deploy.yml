@@ -92,6 +92,63 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
+      - name: Validate SEO metadata and public pages
+        run: |
+          python3 - <<'PY'
+          import json
+          from html.parser import HTMLParser
+          from pathlib import Path
+
+          class MetadataParser(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.meta = {}
+                  self.ld = []
+                  self.in_ld = False
+                  self.buffer = []
+
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if tag == "meta":
+                      key = attrs.get("property") or attrs.get("name")
+                      if key:
+                          self.meta[key] = attrs.get("content", "")
+                  if tag == "script" and attrs.get("type") == "application/ld+json":
+                      self.in_ld = True
+                      self.buffer = []
+
+              def handle_data(self, data):
+                  if self.in_ld:
+                      self.buffer.append(data)
+
+              def handle_endtag(self, tag):
+                  if tag == "script" and self.in_ld:
+                      self.ld.append(json.loads("".join(self.buffer)))
+                      self.in_ld = False
+
+          checked = ["", "publications", "cv", "projects", "activities", "beyond", "teaching"]
+          root = Path("_site")
+          for route in checked:
+              filename = root / route / "index.html"
+              parser = MetadataParser()
+              parser.feed(filename.read_text(encoding="utf-8"))
+              image = parser.meta.get("og:image", "")
+              assert image.startswith("https://yurbro.github.io/assets/img/"), (route, image)
+              relative = image.removeprefix("https://yurbro.github.io/")
+              assert (root / relative).is_file(), (route, "missing OG image", image)
+              assert parser.meta.get("twitter:image") == image, route
+              assert parser.ld, (route, "missing JSON-LD")
+              graph = parser.ld[0].get("@graph", [])
+              types = {node.get("@type") for node in graph}
+              assert {"Person", "WebSite", "WebPage"} <= types, (route, types)
+              if not route:
+                  person = next(node for node in graph if node["@type"] == "Person")
+                  assert len(person.get("sameAs", [])) >= 4, "Homepage is missing public academic identity links"
+
+          for route in ("blog", "books", "archive", "books/the_godfather"):
+              assert not (root / route / "index.html").exists(), (route, "sample page still deployed")
+          print("Validated metadata and disabled demo pages across", len(checked), "routes")
+          PY
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
