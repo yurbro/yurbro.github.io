@@ -1328,16 +1328,24 @@ footer.sticky-bottom .footer-copyright {
   color: #ffffff !important;
 }
 
-/* Academic CV: small explicit PDF action, using the site's existing template. */
-.cv-pdf-download {
+/* Academic CV: quiet text-only PDF link, legible in light and dark themes. */
+.cv-pdf-download,
+.cv-pdf-download:visited {
   align-items: center;
+  color: var(--global-text-color-light) !important;
   display: inline-flex;
   float: right;
   font-size: 0.8rem;
   font-weight: 500;
-  gap: 0.35rem;
   padding: 0.45rem 0.15rem;
   text-decoration: none;
+}
+
+.cv-pdf-download:hover,
+.cv-pdf-download:focus-visible {
+  color: var(--global-text-color) !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .cv-pdf-download:focus-visible {
