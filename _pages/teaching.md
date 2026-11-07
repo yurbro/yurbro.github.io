@@ -4,7 +4,7 @@ permalink: /teaching/
 title: teaching
 description: Teaching support in engineering systems, scientific principles and pharmaceutical formulation.
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 ## University of Surrey
