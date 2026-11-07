@@ -1327,3 +1327,106 @@ footer.sticky-bottom .footer-copyright {
 .publications ol.bibliography li .abbr abbr.publication-venue-badge span {
   color: #ffffff !important;
 }
+
+/* Academic CV: small explicit PDF action, using the site's existing template. */
+.cv-pdf-download {
+  align-items: center;
+  display: inline-flex;
+  float: right;
+  font-size: 0.8rem;
+  font-weight: 500;
+  gap: 0.35rem;
+  padding: 0.45rem 0.15rem;
+  text-decoration: none;
+}
+
+.cv-pdf-download:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 3px;
+}
+
+@media (max-width: 575px) {
+  .cv-pdf-download {
+    font-size: 0.75rem;
+    padding: 0.35rem 0;
+  }
+}
+
+/* Print layout is used by the build to provide an accessible, text-based CV PDF.
+   It does not change the regular website layout or CV content. */
+@media print {
+  @page {
+    size: A4;
+    margin: 13mm 14mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #222222 !important;
+    font-size: 9pt !important;
+  }
+
+  body.fixed-top-nav {
+    padding-top: 0 !important;
+  }
+
+  header:not(.post-header),
+  footer,
+  #toc-sidebar,
+  .cv-pdf-download,
+  #progress,
+  #back-to-top,
+  .back-to-top,
+  .back-to-top-wrapper {
+    display: none !important;
+  }
+
+  body > .container,
+  body > .container.mt-5 {
+    margin-top: 0 !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .row > .col-sm-3 {
+    display: none !important;
+  }
+
+  .row > .col-sm-9 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .cv .card {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin-top: 0.8rem !important;
+    padding: 0 !important;
+  }
+
+  .cv .card-title {
+    border-bottom: 1px solid #cccccc;
+    margin: 0 0 0.35rem !important;
+    padding: 0 0 0.2rem;
+  }
+
+  .cv .list-group-item {
+    background: transparent !important;
+    border: 0 !important;
+    break-inside: avoid;
+    padding: 0.28rem 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .cv a {
+    color: #194e7a !important;
+  }
+
+  .cv .badge {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
