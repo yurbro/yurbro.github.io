@@ -148,6 +148,49 @@ jobs:
           for route in ("blog", "books", "archive", "books/the_godfather"):
               assert not (root / route / "index.html").exists(), (route, "sample page still deployed")
           print("Validated metadata and disabled demo pages across", len(checked), "routes")
+
+          class PictureParser(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.pictures = []
+                  self.current = None
+
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if tag == "picture":
+                      self.current = {"source": [], "img": []}
+                  elif self.current is not None and tag in ("source", "img"):
+                      self.current[tag].append(attrs)
+
+              def handle_endtag(self, tag):
+                  if tag == "picture" and self.current is not None:
+                      self.pictures.append(self.current)
+                      self.current = None
+
+          for route, minimum_pictures in (("activities", 18), ("beyond", 1), ("", 1)):
+              content = (root / route / "index.html").read_text(encoding="utf-8")
+              picture_parser = PictureParser()
+              picture_parser.feed(content)
+              if route == "activities":
+                  photos = [pic for pic in picture_parser.pictures if pic["img"] and "/assets/img/activities/" in pic["img"][0].get("src", "")]
+              elif route == "beyond":
+                  photos = [pic for pic in picture_parser.pictures if pic["img"] and "chisa-2026-09-prague" in pic["img"][0].get("src", "")]
+              else:
+                  photos = [pic for pic in picture_parser.pictures if pic["img"] and "/assets/img/prof_pic.jpg" in pic["img"][0].get("src", "")]
+              assert len(photos) >= minimum_pictures, (route, "missing responsive pictures", len(photos))
+              for photo in photos:
+                  image = photo["img"][0]
+                  assert int(image.get("width", 0)) > 0 and int(image.get("height", 0)) > 0, (route, image)
+                  assert image.get("loading") in ("lazy", "eager"), (route, image)
+                  webp_sources = [entry for entry in photo["source"] if entry.get("type") == "image/webp"]
+                  assert webp_sources, (route, "missing responsive WebP source", image)
+                  for source in webp_sources:
+                      assert source.get("sizes"), (route, "missing responsive sizes")
+                      paths = [candidate.strip().split()[0] for candidate in source["srcset"].split(",") if candidate.strip()]
+                      assert len(paths) >= 3, (route, "incomplete WebP resolutions", paths)
+                      for webp_path in paths:
+                          assert (root / webp_path.lstrip("/")).is_file(), (route, "missing generated WebP", webp_path)
+          print("Validated 18+ gallery photos, Beyond photo and profile WebP sources")
           PY
       - name: Purge unused CSS 🧹
         run: |
