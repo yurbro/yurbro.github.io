@@ -3,10 +3,12 @@ layout: about
 title: about
 permalink: /
 subtitle: PhD Researcher & Research Fellow · University of Surrey
+description: Yu Zhang is a PhD researcher and Research Fellow at the University of Surrey researching AI-driven modelling, optimisation and digital twins for engineering and healthcare.
 
 profile:
   align: right
   image: prof_pic.jpg
+  alt: Black-and-white line portrait of Yu Zhang
   image_circular: false
   more_info: >
     <p><i class="fa-solid fa-location-dot"></i> Guildford, United Kingdom</p>
