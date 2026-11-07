@@ -13,11 +13,13 @@ layout: default
             {% else %}
               href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
             {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
+            download="Yu_Zhang_Academic_CV.pdf"
+            aria-label="Download the academic CV as PDF"
+            title="Download CV as PDF"
+            class="cv-pdf-download"
           >
-            <i class="fa-solid fa-file-pdf"></i>
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+            <span>Download PDF</span>
           </a>
         {% endif %}
       </h1>
@@ -64,11 +66,13 @@ layout: default
             {% else %}
               href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
             {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
+            download="Yu_Zhang_Academic_CV.pdf"
+            aria-label="Download the academic CV as PDF"
+            title="Download CV as PDF"
+            class="cv-pdf-download"
           >
-            <i class="fa-solid fa-file-pdf"></i>
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+            <span>Download PDF</span>
           </a>
         {% endif %}
       </h1>
