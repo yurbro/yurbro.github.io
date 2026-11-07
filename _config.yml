@@ -8,7 +8,7 @@ middle_name:
 last_name: Zhang
 contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Yu Zhang is a PhD researcher and research assistant at the University of Surrey working on AI, digital twins and data-driven modelling for drug delivery, engineering and real-world clinical data.
+  Yu Zhang is a PhD researcher and Research Fellow at the University of Surrey developing AI-driven modelling, optimisation and digital-twin methods for chemical engineering, drug formulation and healthcare.
 footer_text: ""
 keywords: AI for Science, Chemical Engineering, Dermal Drug Delivery, Formulation Optimisation, Digital Twins, Active Learning, Large Language Models, Clinical Machine Learning, Uncertainty Quantification
 lang: en
@@ -62,7 +62,7 @@ max_width: 1080px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true
 serve_schema_org: true
-og_image: prof_pic.jpg
+og_image: /assets/img/prof_pic.jpg # public, root-relative image for Open Graph and Twitter
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -135,7 +135,7 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false # disable upstream example bookshelf; retain source for possible future use
   news:
     defaults:
       layout: post
@@ -178,6 +178,10 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - _pages/blog.md # no authored blog posts yet; avoid indexing an empty page
+  - _pages/books.md # disable upstream sample bookshelf page
+  - _pages/dropdown.md # disable upstream archive compatibility page
+  - _books/ # exclude placeholder book data from site output
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -244,7 +248,7 @@ jekyll-archives:
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
   books:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    enabled: [] # prevent example book category/tag/year archives
 
 display_tags: []
 display_categories: []
