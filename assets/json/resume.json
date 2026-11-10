@@ -263,10 +263,10 @@
   "publications": [
     {
       "name": "A Spectral-Continuity-Guided Bayesian Learning Framework for Infrared Spectroscopy-Based Soft Sensor Modeling",
-      "publisher": "Measurement (accepted)",
+      "publisher": "Measurement",
       "releaseDate": "2026",
-      "url": "https://yurbro.github.io/publications/#wu2026spectral",
-      "summary": "Pengcheng Wu, Tao Chen, Yu Zhang, Xiaobo Zou and Haoran Li. Collaborative manuscript on spectral-continuity-guided Bayesian learning for infrared spectroscopy-based soft sensor modelling. Accepted on 3 November 2026; publication details forthcoming."
+      "url": "https://www.sciencedirect.com/science/article/pii/S0263224126034949",
+      "summary": "Pengcheng Wu, Tao Chen, Yu Zhang, Xiaobo Zou and Haoran Li. Collaborative manuscript on spectral-continuity-guided Bayesian learning for infrared spectroscopy-based soft sensor modelling. Published online in Measurement in 2026."
     },
     {
       "name": "SkinMiner: LLM-powered data mining to accelerate formulation design for skin products",
