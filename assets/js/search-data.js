@@ -69,7 +69,7 @@ ninja.data = [{
           section: "News",},{id: "news-skinminer-llm-powered-data-mining-to-accelerate-formulation-design-for-skin-products-is-available-as-an-ssrn-preprint-the-manuscript-is-under-review-at-international-journal-of-pharmaceutics-code",
           title: 'SkinMiner: LLM-powered data mining to accelerate formulation design for skin products is available...',
           description: "",
-          section: "News",},{id: "news-our-co-authored-paper-a-spectral-continuity-guided-bayesian-learning-framework-for-infrared-spectroscopy-based-soft-sensor-modeling-has-been-accepted-by-measurement-accepted-on-3-november-2026-publication-details-are-forthcoming",
+          section: "News",},{id: "news-our-co-authored-paper-a-spectral-continuity-guided-bayesian-learning-framework-for-infrared-spectroscopy-based-soft-sensor-modeling-is-now-published-online-in-measurement-read-the-article",
           title: 'Our co-authored paper, A Spectral-Continuity-Guided Bayesian Learning Framework for Infrared Spectroscopy-Based Soft Sensor...',
           description: "",
           section: "News",},{id: "news-our-co-authored-review-optimisation-of-topical-and-transdermal-pharmaceutical-formulations-methods-challenges-and-opportunities-is-now-published-in-smartsys-paper",
