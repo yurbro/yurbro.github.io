@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our co-authored paper, **A Spectral-Continuity-Guided Bayesian Learning Framework for Infrared Spectroscopy-Based Soft Sensor Modeling**, is now published online in _Measurement_. [Read the article](https://www.sciencedirect.com/science/article/pii/S0263224126034949).
+Our co-authored paper, **A Spectral-Continuity-Guided Bayesian Learning Framework for Infrared Spectroscopy-Based Soft Sensor Modeling**, is now published online in _Measurement_. [Read the article](https://www.sciencedirect.com/science/article/pii/S0263224126034949) · [Free full text (until 5 Jan 2027)](https://authors.elsevier.com/c/1o79mxsQaXrG5).
