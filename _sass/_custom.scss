@@ -1438,3 +1438,56 @@ footer.sticky-bottom .footer-copyright {
     print-color-adjust: exact;
   }
 }
+
+
+/* Claude Monet — subtle, homepage-only watercolour artwork in the margins.
+   Public-domain / CC0 reproductions hosted by Wikimedia Commons:
+   Water Lilies (1906), Art Institute of Chicago (1933.1157);
+   The Japanese Footbridge (1899), National Gallery of Art (1992.9.1);
+   The Artist's Garden at Giverny (1900), Yale University Art Gallery.
+   Keep all artwork decorative, behind the content, and out of print/dark mode. */
+body.monet-homepage {
+  position: relative;
+}
+
+body.monet-homepage::before {
+  background-image:
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Claude_Monet_-_Water_Lilies_-_1933.1157_-_Art_Institute_of_Chicago.jpg/640px-Claude_Monet_-_Water_Lilies_-_1933.1157_-_Art_Institute_of_Chicago.jpg"),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Claude_Monet%2C_The_Japanese_Footbridge%2C_1899%2C_NGA_74796.jpg/640px-Claude_Monet%2C_The_Japanese_Footbridge%2C_1899%2C_NGA_74796.jpg"),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/The_Artist%27s_Garden_at_Giverny_by_Claude_Monet_1900.jpeg/480px-The_Artist%27s_Garden_at_Giverny_by_Claude_Monet_1900.jpeg");
+  background-position: right -8rem top 2rem, right -8rem bottom -6rem, left -7rem bottom -4rem;
+  background-repeat: no-repeat;
+  background-size: 440px auto, 420px auto, 310px auto;
+  content: "";
+  filter: saturate(0.72) contrast(0.94);
+  inset: 56px 0 0;
+  opacity: 0.09;
+  pointer-events: none;
+  position: fixed;
+  z-index: 0;
+}
+
+body.monet-homepage > .container[role="main"] {
+  position: relative;
+  z-index: 1;
+}
+
+/* Do not decorate text-heavy mobile layouts, and respect the dark theme. */
+html[data-theme="dark"] body.monet-homepage::before {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body.monet-homepage::before {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Claude_Monet_-_Water_Lilies_-_1933.1157_-_Art_Institute_of_Chicago.jpg/640px-Claude_Monet_-_Water_Lilies_-_1933.1157_-_Art_Institute_of_Chicago.jpg");
+    background-position: right -7rem top 0;
+    background-size: 260px auto;
+    opacity: 0.05;
+  }
+}
+
+@media print {
+  body.monet-homepage::before {
+    display: none !important;
+  }
+}
